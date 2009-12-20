@@ -1,0 +1,250 @@
+<?php
+
+/**
+ * @file
+ * - Provides a Google maps location picker widget for Geo cck fields.
+ * - Provides a field formatter for Geo fields that displays point, line, or
+ *   polygon data on a Google map.
+ */
+
+/**
+ * Implementation of FAPI hook_elements().
+ */
+function gmap_geo_elements() {
+  return array(
+    'gmap_geo_picker' => array(
+      '#input' => TRUE,
+      '#columns' => array('lat', 'lon', 'wkt'),
+      '#delta' => 0,
+      '#process' => array('gmap_geo_picker_process'),
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_gis_input_info().
+ */
+function gmap_geo_gis_input_info($gis_type = NULL) {
+  $inputs = array(
+    'gmap_geo_picker' => array(
+      'label' => t('GMap picker'),
+      'gis input' => 'array',
+      'safe reverse' => TRUE,
+      'gis types' => array('point'), /* eventually also 'linestring' and 'polygon' */
+      'element' => array(
+        '#type' => 'gmap_geo_picker',
+      ),
+    ),
+  );
+  return $inputs;
+}
+
+/**
+ * See the gmap_set_location() function in gmap.module and its' companion
+ * location_latlon_form() in location.inc
+ */
+function gmap_geo_picker_process($element, $edit, $form_state, $form) {
+  $field = $form['#field_info'][$element['#field_name']];
+
+  $element['#title'] = $field['widget']['label'];
+  $element['#type'] = 'fieldset';
+
+  $element['map'] = array();  // reserve spot at top of form for map
+
+  $element['lat'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Latitude'),
+    '#default_value' => isset($element['#value']['lat']) ? $element['#value']['lat'] : NULL,
+    '#required' => $field['required'],
+    '#size' => 15,
+    '#prefix' => '<div class="container-inline">',
+  );
+  $element['lon'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Longitude'),
+    '#default_value' => isset($element['#value']['lon']) ? $element['#value']['lon'] : NULL,
+    '#required' => $field['required'],
+    '#size' => 15,
+    '#suffix' => '</div>',
+  );
+
+  $element['map']['gmap']['#value'] = gmap_set_location($field['widget']['gmap_geo_picker_macro'], $element, array('latitude' => 'lat', 'longitude' => 'lon'));
+  $element['map_instructions'] = array(
+    '#type' => 'markup',
+    '#weight' => 2,
+    '#prefix' => '<div class=\'description\'>',
+    '#value' => t('You may set the location by clicking on the map, or dragging the location marker.  To clear the location, click on the marker.'),
+    '#suffix' => '</div>',
+  );
+
+  return $element;
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function gmap_geo_theme() {
+  return array(
+    'gmap_geo_picker' => array(
+      'arguments' => array('element' => NULL),
+    ),
+    'gmap_geo_formatter_gmap_geo' => array(
+      'function' => 'theme_gmap_geo_formatter',
+      'arguments' => array('element' => NULL),
+    ),
+  );
+}
+
+/**
+ * Theme the gmap_picker widget.
+ */
+function theme_gmap_geo_picker($element) {
+  return $element['#children'];
+}
+
+/**
+ * Implementation of hook_field_formatter_info().
+ */
+function gmap_geo_field_formatter_info() {
+  return array(
+    'gmap_geo' => array(
+      'label' => t('GMap'),
+      'field types' => array('geo', 'geo_data'),
+      'multiple values' => CONTENT_HANDLE_MODULE,
+      'gis types' => array('point', 'linestring', 'polygon'),
+      'gis input' => 'array_for_gmap',
+    ),
+  );
+}
+
+/**
+ * Themes a geo field as a gmap.
+ *
+ * This uses gmap_picker widget settings from the cck field settings, if they
+ * exist, and otherwise uses GMap's default map settings. Bdragon and I (Bec)
+ * have talked briefly about a "gmap profile" setup, in which case we could
+ * provide a field formatter for each gmap profile ("GMap: profile_name"). This
+ * would be ideal.
+ *
+ * - Autozoom doesn't yet zoom for polygons and lines; this field formatter
+ * doesn't provide any additional autozoom functionality.
+ *
+ * - Linestrings and polygons are rendered as "encoded polylines" in Google Maps,
+ * because they tend to be too complex to render as a plain set of points.
+ * Encoded polylines reveal more complexity as the map is zoomed.
+ */
+function theme_gmap_geo_formatter($element) {
+  $map = array();
+  foreach (element_children($element) as $i) {
+    $item = $element[$i]['#item'];
+    $item['array_for_gmap'] = geo_wkb_get_data($item['wkb'], 'array_for_gmap');
+    gmap_geo_map_feature($item['array_for_gmap'], $item['gis type'], $map);
+  }
+
+  if ($map) {
+    // Load field instance info. If the field uses the gmap_picker widget, use
+    // the widget's gmap macro to build the map array.
+    $field = content_fields($element['#field_name'], $element['#type_name']);
+    if (isset($field['widget']['gmap_geo_picker_macro'])) {
+      $field_map = gmap_parse_macro($field['widget']['gmap_geo_picker_macro']);
+      $map = array_merge($field_map, $map);
+    }
+
+    $map['behavior'] = array('autozoom' => TRUE);
+    if (isset($field_map['zoom'])) {
+      $map['maxzoom'] = $field_map['zoom'];
+    }
+    return theme('gmap', $map);
+  }
+}
+
+/**
+ * Turn a Geo feature array into a feature in a GMap array. See the GMap
+ * Advanced Help file for information on GMap arrays.
+ * @param $geo_array
+ *   An array containg a set of lat/lon points, array(0 => latitude, 1 => longitude).
+ *   Can be obtained from WKB via geo_wkb_get_data($wkb, 'array_for_gmap'), or by
+ *   declaring a 'gis input' => 'array_for_gmap' in hook_gis_input_info() or
+ *   hook_field_formatter_info().
+ * @param $geo_type
+ *   A string declaring what type of feature this is, either 'point',
+ *   'linestring', or 'polygon'.
+ * @param &$map
+ *   A gmap array. The feature will be added to either 'markers' or 'shapes',
+ *   as appropriate.
+ */
+function gmap_geo_map_feature($geo_array, $geo_type, &$map) {
+  switch ($geo_type) {
+    case 'point':
+      $map['markers'][] = array('latitude' => $geo_array['0'], 'longitude' => $geo_array['1']);
+      break;
+    case 'linestring':
+      module_load_include('inc', 'gmap', 'gmap_polyutil');
+      $polyline = gmap_polyutil_polyline($geo_array);
+      $polyline['type'] = 'encoded_line';
+      $map['shapes'][] = $polyline;
+      break;
+    case 'polygon':
+      module_load_include('inc', 'gmap', 'gmap_polyutil');
+      foreach ($geo_array as $points) {
+        $polylines[] = gmap_polyutil_polyline($points);
+      }
+      $map['shapes'][] = array(
+        'type' => 'encoded_polygon',
+        'polylines' => $polylines,
+      );
+      break;
+  }
+}
+
+/**
+ * Implementation of geo_wkb_get_MY_FORMAT(). This should be called with geo's
+ * wrapper function: geo_wkb_get_data($wkb, 'array_for_gmap')
+ *
+ * @return
+ *   An array of points in the same arrangement as
+ *   geo_wkb_get_data($wkb, 'array'), but keyed with 0 and 1 instead of 'lat'
+ *   and 'lon', respectively. This is more ambiguous, but is used here for
+ *   conceptual consistency with the GMap module.
+ */
+function geo_wkb_get_array_for_gmap($data, $items = NULL) {
+  if (isset($data['x']) && isset($data['y'])) {
+    $ret = array('0' => $data['y'], '1' => $data['x']);
+  }
+  elseif (isset($data['value'])) {
+    $ret = $data['value'];
+  }
+  if (isset($items)) {
+    return array_merge($items, array($ret));
+  }
+  return array($ret);
+}
+
+function geo_wkb_get_array_for_gmap_post($data, $items = NULL) {
+  if ($data['type'] == 'point') {
+    $data['value'] = $data['value'][0];
+    $data['0'] = $data['value']['0'];
+    $data['1'] = $data['value']['1'];
+  }
+  return $data;
+}
+
+/**
+ * Implementation of hook_views_plugins().
+ */
+function gmap_geo_views_plugins() {
+  return array(
+    'module' => 'gmap_geo',
+    'style' => array(
+      'gmap_geo' => array(
+        'title' => t('GMap for Geo'),
+        'help' => t('Displays rows as a map.'),
+        'handler' => 'gmap_geo_plugin_style_gmap',
+        'theme' => 'gmap_geo_view_gmap',
+        'uses row plugin' => TRUE,
+        'uses options' => TRUE,
+        'type' => 'normal',
+      ),
+    ),
+  );
+}

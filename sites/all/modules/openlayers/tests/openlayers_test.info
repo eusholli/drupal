@@ -1,0 +1,13 @@
+; $Id: openlayers_test.info,v 1.1.2.1 2009/09/21 04:02:19 zzolo Exp $
+name = OpenLayers Tests
+description = OpenLayers test module.  There is no reason to install this.
+core = 6.x
+package = OpenLayers
+hidden = TRUE
+
+; Information added by drupal.org packaging script on 2009-10-02
+version = "6.x-1.0-beta3"
+core = "6.x"
+project = "openlayers"
+datestamp = "1254458133"
+

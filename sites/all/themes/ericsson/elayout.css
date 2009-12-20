@@ -1,0 +1,1966 @@
+/**************************************************************/
+/* Ericsson disposition properties */ /* Validated xxxx-xx-xx */
+/**************************************************************/
+
+/* BASE CLASSES ******************************************************/
+.eHide {
+	display: none !important;
+}
+.eShow {
+	display: block !important;
+}
+.eFlash{
+	z-index: 0;	
+}
+
+/* BODY **************************************************************/
+body {
+	text-align: center;
+}
+
+#eBodyContainer {
+	text-align: left;
+	margin: auto;
+	width: auto;
+	min-width: 970px;
+	max-width: 1280px;
+}
+
+/* HEAD **************************************************************/
+#eHead {
+	float: left;
+}
+
+#eHeadNavigation {
+	float: left;
+	width: 100%;
+}
+#eHead .eLogInContainer,
+#eHead form {
+	float: right;
+	clear: right;
+}
+
+/* CONTENT ***********************************************************/
+#eContent {
+	float: left;
+	overflow: hidden;
+}
+
+#eContent h1,
+.eColGroup {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+#eLeftMenu {
+	padding-right: 8.325%;
+	width: 16.675%;
+}
+#eLeftMenu h2 {
+	margin-top: 0 !important;
+	margin-bottom: 24px;
+}
+
+#eSidebar {
+	padding: 0 1%;
+	width: 23%;
+}
+
+#eSidebar h2 {
+	margin-top: 0 !important;
+}
+
+ul.eColGroup {
+	margin-left: 0;
+}
+
+ul.eColGroup li {
+	list-style: none;
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+
+ul.eCol2w50 {
+	list-style: inside;
+	width: 40%;
+}
+
+.eCol1,
+.eCol3w10,
+.eCol2w15,
+.eCol2w15m,
+.eCol2w25,
+.eCol2w25m,
+.eCol2w33,
+.eCol2w33m,
+.eCol3w33m,
+.eCol3w45m,
+.eCol3w80,
+.eCol2w50,
+.eCol2w50m,
+.eCol2w66,
+.eCol2w66m,
+.eCol2w75,
+.eCol2w75m,
+.eCol2w85,
+.eCol2w85m,
+.eCol3w25,
+.eCol3w25m,
+.eCol3w50,
+.eCol3w50m,
+.eCol3w33,
+.eCol4w25,
+.eCol4w25m {
+	float: left;
+}
+
+.eCol1 {
+	width: 100%;
+}
+
+.eCol1m {
+	width: 90%;
+	margin-right: 10%;
+}
+
+.eCol3w10 {
+	width: 10%;
+}
+
+.eCol2w15 {
+	width: 15%;	
+}
+
+.eCol2w15m {
+	width: 12%;
+	margin-right: 3%;
+}
+
+.eCol2w25 {
+	width: 25%;
+	min-height:.1em;
+}
+
+.eCol2w25m {
+	width: 22%;
+	margin-right: 3%;
+}
+
+.eCol2w33 {
+	width: 33%;
+}
+
+.eCol2w33m,
+.eCol3w33m {
+	width: 30%;
+	margin-right: 3%;
+}
+
+.eCol3w45m {
+	width: 42%;
+	margin-right: 3%;
+}
+
+.eCol2w50 {
+	width: 50%;
+}
+
+.eCol2w50m {
+	width: 47%;
+	margin-right: 3%;
+}
+
+.eCol2w66 {
+	width: 66%;
+}
+
+.eCol2w66m {
+	width: 63%;
+	margin-right: 3%;
+}
+
+.eCol2w75 {
+	width: 75%;
+}
+
+.eCol2w75m {
+	width: 72%;
+	margin-right: 3%;
+}
+
+.eCol2w85 {
+	width: 85%;
+}
+
+.eCol2w85m {
+	width: 82%;
+	margin-right: 3%;
+}
+
+.eCol3w25 {
+	width: 25%;
+	min-height:.1em;
+}
+
+.eCol3w25m {
+	width: 22%;
+	margin-right: 3%;
+}
+
+.eCol3w33 {
+	width: 33%;
+}
+
+.eCol3w50 {
+	width: 50%;
+}
+
+.eCol3w50m {
+	width: 47%;
+	margin-right: 3%;
+}
+
+.eCol3w80 {
+	width: 80%;
+}
+
+.eCol4w25 {
+	width: 25%;
+}
+
+.eCol4w25m {
+	width: 22%;
+	margin-right: 3%;
+}
+
+.eCol720px {
+	width: 720px !important;
+}
+
+.eColSingleton {
+	width: 90%;
+	padding-left: 10%;
+}
+
+.eColLogin,
+.eCol404 {
+	width: 80%;
+	padding: 0 10%;
+}
+
+p {
+	max-width: 600px;
+}
+
+/* VISUAL ADD ONS ****************************************************/
+.ePb { /* Padding Bottom */
+	padding-bottom: 1.5em;
+}
+
+.ePt { /* Padding Top */
+	padding-top: 1.5em;
+}
+
+.eBbt { /* Big Border Top */
+	border-top: 6px #e5e5e5 solid;
+}
+
+.eBt { /* Border Top */
+	border-top: 1px #e2e2e2 solid;	
+}
+
+.eBb { /* Border Bottom */
+	border-bottom: 1px #e2e2e2 solid;	
+}
+
+.eGbt { /* Gradient Border Top */
+	background: url(images/ebottomgrad.jpg) top repeat-x;
+	padding-top: 2em;
+}
+
+.eNm { /* No Margin */
+	margin: 0 !important;
+}
+
+.eNtm { /* No Top Margin */
+	margin-top: 0 !important;
+}
+
+.eMt { /* Margin Top */
+	margin-top: 1em !important;
+}
+
+.eClear {
+	clear: both;
+}
+
+.eHero {
+	padding-bottom: 3em;
+}
+
+.eRight {
+	float: right !important;
+}
+
+.eLeft {
+	float: left !important;
+}
+
+.eMr {
+	margin-right: 1em;
+}
+
+.eMl {
+	margin-left: 1em;
+}
+
+.eNoOverflow {
+	overflow: hidden;
+}
+
+/* UNORDERED LISTS ***************************************************/
+.eStructural {
+	margin: 0;
+}
+
+.eStructural li {
+	list-style: none;
+}
+
+/* DEFINITION LISTS **************************************************/
+dl {
+	margin: 0;
+	font-weight: normal;
+}
+
+dl dt {
+	float: left;
+	font-weight: bold;
+	width: 50%;
+}
+
+dl dt,
+dl dd {
+	padding: 1em 0;
+}
+
+dl.eCompact {
+	float: left;
+	width: 50%;
+}
+
+dl.eCompact dt {
+	float: none;
+	width: auto;
+}
+
+/* FOOTER ************************************************************/
+#eFooter {
+	float: left;
+	min-height: 5em;
+}
+
+
+/******************************************************************/
+/* Ericsson element-layout properties */ /* Validated xxxx-xx-xx  */
+/******************************************************************/
+
+/* BASE CLASSES ******************************************************/
+.eAlignCenter {
+	text-align: center;
+}
+
+.eRemark {
+	font-weight: bold;
+}
+.eToggleSelected { 
+	font-weight: bold; 
+}
+.eFail { border:1px solid red; }			
+
+.eCenter {
+	text-align: center;
+}
+.eHit {
+	background:#FFFFCC;
+}
+/* BODY **************************************************************/
+body {
+	margin: 0 30px;
+}
+
+/* OBJECT **************************************************************/
+
+object{
+	outline: none;	
+}
+
+/* LINKS *************************************************************/
+a {
+	color:#0066BB; 
+	text-decoration: none;
+}
+a:active,a.active {
+	color: #222222;
+}
+a:hover {
+	text-decoration: underline;
+}
+.eArrow {
+	background: #066689 url(images/esprite.png) no-repeat scroll right -726px;
+	color: #fff;
+	display: block;
+	float: left;
+	height: 27px;
+	line-height: 27px;
+	padding: 0 40px 0 10px;
+}
+.eArrowLeft {
+	background: #666666 url(images/esprite.png) no-repeat scroll left -869px;
+	color: #fff;
+	display: block;
+	float: left;
+	height: 27px;
+	line-height: 27px;
+	padding: 0 10px 0 40px;
+}
+p .eArrowLeft {
+	margin-bottom:1em;
+}
+.eActiveLink {
+	color: #222222 !important;
+}
+
+.eExtra { /* For those top right positioned elements */
+	position: absolute;
+	top: 1.5em;
+	right: 1.4em;	
+	text-align: right;
+}
+
+a strong {
+	font-size: 83%;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* ICONS *************************************************************/
+.eIcon {
+	background: url(images/esprite.png) no-repeat;		
+	padding-left: 20px;
+}
+.eIcon.eImage 			{ background-position: 0 -33px; }
+.eIcon.eImage:hover,
+.eIcon.eImage:focus 	{ background-position: -13px 0; }
+.eIcon.eMail 			{ background-position: 0 -165px; }
+.eIcon.eMail:hover,
+.eIcon.eMail:focus 		{ background-position: -13px -132px; }
+.eIcon.eVideo 			{ background-position: 0 -231px; }
+.eIcon.eVideo:hover,
+.eIcon.eVideo:focus 	{background-position: -13px -198px;  }
+.eIcon.eDoc 			{ background-position: 0 -99px; }
+.eIcon.eDoc:hover,
+.eIcon.eDoc:focus 		{ background-position: -13px -66px; }
+.eIcon.ePodcast 		{ background-position: 0 -297px; }
+.eIcon.ePodcast:hover,
+.eIcon.ePodcast:focus 	{ background-position: -13px -264px; }
+.eIcon.eSearch 			{ background-position: 0 -363px; }
+.eIcon.eSearch:hover,
+.eIcon.eSearch:focus 	{ background-position: -13px -330px; }
+.eIcon.eZoomIn 			{ background-position: 0 -429px; }
+.eIcon.eZoomIn:hover,
+.eIcon.eZoomIn:focus 	{ background-position: -13px -396px; }
+.eIcon.eZoomOut 		{ background-position: 0 -495px; }
+.eIcon.eZoomOut:hover,
+.eIcon.eZoomOut:focus 	{ background-position: -13px -462px; }
+.eIcon.eAudio 			{ background-position: 0 -561px; }
+.eIcon.eAudio:hover,
+.eIcon.eAudio:focus 	{ background-position: -13px -528px; }
+.eIcon.eClip 			{ background-position: 0 -627px; }
+.eIcon.eClip:hover,
+.eIcon.eClip:focus 		{ background-position: -13px -594px; }
+.eIcon.eRSS 			{ background-position: 0 -693px; }
+.eIcon.eRSS:hover,
+.eIcon.eRSS:focus		{ background-position: -13px -660px; }
+.eIcon.eMore {
+	background-position: right -1036px;
+	padding: 0 1em 0 0; 
+}
+.eIcon.eError { 
+	background-position:0 -820px;
+	display:block;
+	height:41px;
+	width:25px;
+}
+.eIcon.eLoginLink{	
+	background-position:0 -1687px;
+	padding: 0 0 0 17px;
+}
+.eIcon.eLoginLink:hover, .eIcon.eLoginLink:focus{	
+	background-position:-18px -1707px;
+}
+.eIcon.eLocalSiteLink{	
+	background-position:0 -1698px;
+	padding: 0 0 0 25px;
+}
+.eIcon.eLinkExt{	
+	background-position:right -1909px;
+	padding:0 55px 0 0;
+}
+.eIcon.eLinkExt:hover, .eIcon.eLinkExt:focus{	
+	background-position:right -1932px;
+}
+
+/* HEADINGS **********************************************************/
+h2{
+	font-size: 150%;
+	text-transform: uppercase;
+}
+h2,h3 {
+	color: #333333;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+h4 {
+	color: #666666;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 116%;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.eNoCaps {
+	text-transform: none;
+}
+
+.eLight {
+	color: #666666;
+	font-weight: normal;
+	font-size: 113%;
+	text-transform: uppercase;	
+}
+
+/* BREAD CRUMBS ******************************************************/
+.eBreadCrumbs {
+	list-style-type: none;
+	margin: 0 0 0.5em;
+	min-height: 1em;
+}
+.eBreadCrumbs li {
+	font-size: 0.917em;
+}
+.eBreadCrumbs * {
+	line-height: 1.3;
+}
+.eBreadCrumbs > li {
+	display: inline;
+	float: left;
+}
+.eBreadCrumbs li a {
+	padding: 0.1em 1ex 0.1em 0;
+	color: #333;
+}
+.eBreadCrumbsDivider {
+	margin: 0 .4em 0 0	
+}
+
+/* TOOLBAR AND TABS *************************************************************/
+
+.eToolbar{
+	margin:.5em 0 0 0;		
+}
+.eTab{
+	display:none;
+}
+.eTab h2{
+	margin:0;
+	color:#666666;	
+}
+.eTab p {
+	font-size: 1.2em;	
+}
+.eTab ul {
+	margin:0 0 2em 0;
+}
+.eTab ul li{
+	list-style: none;	
+}
+ h4.eTabh4{
+	font-size:90%;
+	color:#999999;
+	margin:0 0 2px 0;	
+}
+ h5.eTabh5{
+	color:#333333;
+	font-size:125%;
+	margin:.5em 0 .5em 0;
+}
+/* FORMS *************************************************************/
+form label { 
+	display: block;
+	font-weight: bold; 
+}
+form input, form textarea{
+	border:1px solid #c6c6c6;
+	color: #666666;	
+}
+.eHorizontal label { 
+	display: inline; 
+}
+
+form legend { 
+	display: none; 
+}
+
+form div {
+	margin: 1em 0;
+}
+
+form .eSelectGroup legend { 
+	display: block;
+	font-weight: bold;
+}
+
+form .eSelectGroup input { 
+	float: left;
+	margin-right: 0.5em; 
+}
+
+form .eSelectGroup div { margin: 0; }
+
+form .eHelper { 
+	color: #666;
+	display: block;
+	font-size: 90%;
+	margin-top: 0.5em; 
+}
+
+form .eSearch input {
+	width: 90%;
+}
+	
+form .eSearch .eImageSubmit {
+	background: transparent url(images/esprite.png) no-repeat scroll 2px -1991px;
+	border: 0;
+	cursor: pointer;
+	display: block;
+	float: right;
+	font-size: 0px;
+	height: 30px;
+	line-height: 0px;	
+	text-indent: -999px;
+	width: 40px;
+}
+form .eStretch {
+	width: 100%;
+}
+.eSubmit.eBlue {
+	background-color: #00285e;
+	border-color: #00285e;	
+}
+.eSubmit.eBlue span {
+	border-color: #00285e;
+}
+
+.eSubmit.eBlue button {
+	color: white;
+	font-size: 0.9em;
+	padding: 5px 15px;
+	text-transform: uppercase;
+}
+#eCountryMenuButton-button{
+	width:15em;
+}
+.eBtnSubmit{
+	background: #00285e;
+	height:27px;
+	padding:0 10px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 10px;
+	
+}
+/* PARAGRAPHS ********************************************************/
+p {
+	color: #333333;
+	font-size: 109%;
+}
+
+p.eIntroduction {
+	font-size: 150%;
+}
+.eLogoContainer {
+	float: left;
+	height: 100px;
+	width: 81px;
+	margin: 0 20px 0 0;
+}
+
+.eLogoContainer a {
+	height: 100px;
+	width: 81px;
+	display: block;
+	background-image: url(images/elogosprite.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.eItalic { 
+	font-style: italic; 
+}
+
+.eDate { 
+	color: #666;
+	font-size: 83%;
+	text-transform: uppercase;
+}
+
+.eAuthor{
+	color: #666;
+	font-size: 83%;
+}
+blockquote{
+	font-size: 130%;
+}
+/* HEAD **************************************************************/
+#eHead {
+	border-bottom: 1px solid #e2e2e2;
+	min-height: 120px;
+	width: 100%;
+	position: relative;
+	z-index: 999;
+}
+
+#eHead h1 {
+	line-height: 2em;
+}
+
+
+/* HEADER TOOL MENU *************************************************************/
+
+#eHeaderToolMenu {
+	float: right;
+	margin: 4px 0 23px 0;
+}
+#eHeaderToolMenu a {
+	font-size:80%;
+}
+#eHeaderToolMenu p {
+	margin:0 0 .5em 30px;
+}
+.eHeadMenu .yuimenubaritem {
+	margin:0 !important
+}
+#eHeaderToolMenu .yuimenubaritemlabel {
+	background-image:url(images/esprite.png);
+	background-repeat:no-repeat;
+	margin: 0 5px;
+}
+#eLoginLink {
+	background-position:1px -984px;
+	padding:8px 0 10px 15px;
+}
+#eLoginLink:hover {
+	background-position:1px -926px;
+	padding:8px 0 10px 15px;
+}
+#eCountryLink{
+	background-position:0 -1687px;
+	padding:8px 2px 10px 27px;
+}
+#eCountryLink:hover{
+	background-position:-28px -1729px;
+	padding:8px 2px 10px 27px;
+}
+#eHeaderToolMenu .yuimenu{
+	width: 580px;
+}
+.eHeaderToolMenuGroup{
+	width: 135px;
+	float:left;
+	margin:0 0 0 30px !important;
+}
+.eHeaderToolMenuLabel{
+	color:#999999;
+	padding-top: 8px !important;
+	font-size:1em;	
+}
+.eHeaderToolNoMenu{
+	padding-top: 28px !important;	
+}
+#eCountry a{
+	font-size: 1em;
+	cursor: pointer;
+}
+
+
+/* GLOBAL MENU **************************************************************/
+#eGlobalMenu {
+	padding-top: 60px;
+}
+
+#eGlobalMenu h6 {
+	text-transform: none;
+}
+
+#eGlobalMenu a {
+	cursor: pointer !important;		
+}
+
+#eGlobalMenu a:hover {
+	text-decoration: underline;
+}
+
+#eGlobalMenu .yuimenuitem a { font-size: 83%; }
+
+.eHeadMenu .yuimenubaritem {
+	margin: 0 1em 0 0;
+	padding: 0;
+	float: left;
+	line-height: 2;
+}
+
+.eHeadMenu .yuimenubaritemlabel {
+	color: #3c6296;
+	cursor: default;
+	font-size: 91%;
+	text-transform: uppercase;
+	text-align: left;
+	white-space: nowrap;	
+}
+
+.yuimenu {
+	top: -999em;
+	left: -999em;
+}
+
+.yuimenu .yuimenu,.yuimenubar .yuimenu {
+	position: absolute;
+}
+
+.yuimenubar li,.yuimenu li {
+	list-style-type: none;
+}
+
+.yuimenubar ul,.yuimenu ul,
+.yuimenubar li,.yuimenu li {
+	margin: 0;
+	padding: 0;
+}
+
+.yuimenubar > .bd > ul:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+.yui-menu-shadow {
+	position: absolute;
+	visibility: hidden;
+	z-index: -1;
+}
+
+.eHeadMenu .yui-menu-shadow-visible {
+	left: 0;
+	bottom: -3px;
+	top: 2px;
+	right: -3px!Important;
+	
+	visibility: visible;
+	background: #000 !Important;
+}
+
+.yui-overlay .yui-force-redraw {
+	margin-bottom: 1px;
+}
+.yuimenubaritemlabel {
+	color: #6699CC;
+	cursor:pointer !important;
+	padding: 8px 15px 10px 12px;
+	text-decoration: none;
+	display: block;
+	border-top:1px solid #f8f8f8;
+	outline:none;
+	border-left:1px solid #f8f8f8;
+}
+.eActiveGlobalLink{
+	color:#222222 !important;
+}
+.yuimenubaritemlabel:hover{
+	text-decoration: none;
+	margin:0 0 0 0;
+	padding: 8px 15px 10px 11px;
+}
+/*
+.eJS .yuimenubaritemlabel:hover{
+	text-decoration: underline;
+}*/
+.yuimenubaritem-hassubmenu{
+	border-right:2px solid #F8F8F8;
+}
+.yuimenubaritem-hassubmenu-selected{
+	background:#FFF ;
+	border-right:2px solid #c2c2c2;
+	border-left:1px solid #e5e4e4;
+	margin:0 0 0 0;
+}
+.yuimenubaritemlabel-selected {
+	color: #000066;
+	padding: 8px 15px 10px 11px;
+}
+
+.eHeadMenu .topscrollbar{
+	display:none !important;	
+}
+
+.eHeadMenu h6{
+	font-size: 1.2em;
+}
+.eHeadMenu .yuimenu {
+	line-height: 1.5;
+}
+.eHeadMenu .yuimenu .bd {
+	background: #fff;
+	float: left;
+	padding:30px 13px;
+	border-left:1px solid #e5e4e4;
+}
+.eHeadMenu.yuimenu ul {
+	border: none;
+}
+.eHeadMenu  .yuimenuitemlabel {
+	text-decoration: none;
+	cursor: default;
+}
+.eHeadMenu h6.yuimenuitemlabel {
+	font-weight: normal;
+	padding:.2em 0 .5em 0;
+}
+.yui-menu-shadow-visible {
+	background-color: #000;
+}
+
+.eGlobalMenuGroup,.eGlobalMenuGroupLinks {
+	float:left;
+	margin:0 10px 0 0 !important;
+	width:112px;
+}
+.eGlobalMenuGroup li img {
+	width: 80px;
+	height:80px;	
+}
+.eGlobalMenuGroup .yuimenuitem, .eGlobalMenuGroupLinks .yuimenuitem {
+	padding: 0 0 0 18px;
+}
+.eGlobalMenuGroupLast{
+	padding-right:4px !important;
+}
+.eGlobalMenuGroupLinks{
+	border-left: 1px solid rgb(204, 204, 204);
+}
+
+.eGlobalMenuGroupLinks li a {
+	cursor: pointer;
+}
+.eGlobalMenuLabel{
+	color:#999999;
+	font-size:.9em;	
+}
+.eHeadMenu .ePt{
+	padding-top: .5em !important;
+}
+.eHeadMenu .ePb{
+	padding-bottom: .5em !important;
+}
+
+/* DROPDOWN MENU **************************************************************/
+
+.eMenuContainer{
+	margin:0 0 .5em 0;
+	z-index: 999;		
+}
+.eMenuContainer .yuimenuitemlabel, .eMenuContainer .yuimenubaritemlabel {
+	text-align: left;
+	white-space: nowrap;
+}
+.eMenuContainer .yui-menu-shadow-visible {
+	top: 2px;
+	right: -3px;
+	left: 2px;
+	bottom: -3px;
+	visibility: visible;
+}
+.eMenuContainer .hide-scrollbars * {
+	overflow: hidden;
+}
+.eMenuContainer .hide-scrollbars select {
+	display: none;
+}
+
+.eMenuContainer .yuimenu.show-scrollbars,.eMenuContainer .yuimenubar.show-scrollbars {
+	overflow: visible;
+}
+
+.eMenuContainer .yuimenu.hide-scrollbars .yui-menu-shadow,.eMenuContainer .yuimenubar.hide-scrollbars .yui-menu-shadow{
+	overflow: hidden;
+}
+
+.eMenuContainer .yuimenu.show-scrollbars .yui-menu-shadow,.eMenuContainer .yuimenubar.show-scrollbars .yui-menu-shadow{
+	overflow: auto;
+}
+
+.eMenuContainer .yui-overlay.yui-force-redraw {
+	margin-bottom: 1px;
+}
+
+.eMenuContainer .yuimenubar {
+	font-size: 93%;
+	line-height: 2; 
+	border: solid 1px #808080;
+	background: url(images/esprite.png) repeat-x 0 0;
+}
+.eMenuContainer .yuimenubarnav .yuimenubaritem {
+	border-right: solid 1px #ccc;
+}
+
+.eMenuContainer .yuimenubaritemlabel {
+	padding: 0 10px;
+	color: #000;
+	text-decoration: none;
+	cursor: default;
+	border-style: solid;
+	border-color: #808080;
+	border-width: 1px 0;
+	margin: -1px 0;
+}
+.eMenuContainer .yuimenubaritemlabel:hover {
+	text-decoration: underline;
+	
+}
+.eMenuContainer .yuimenubarnav .yuimenubaritemlabel {
+	padding-right: 20px; 
+}
+
+.eMenuContainer .yuimenubarnav .yuimenubaritemlabel-selected {
+	border-left-width: 1px;
+	margin-left: -1px; 
+}
+.eMenuContainer .yuimenu {
+	/*font-size: 100%;*/
+	font-size: 11px;
+	line-height: 1.5;
+}
+.eMenuContainer .yuimenu .bd { 
+	border: solid 1px #c6c6c6;
+	background-color: #fff;
+}
+
+.eMenuContainer .yuimenu ul {
+	padding: 3px 0;
+	border-width: 1px 0 0 0;
+	border-color: #ccc;
+	border-style: solid;
+}
+.eMenuContainer .yuimenu ul.first-of-type {
+	border-width: 0;
+}
+.eMenuContainer .yuimenu .yui-menu-body-scrolled {
+	border-color: #ccc #808080;
+	overflow: hidden;
+}
+.yuimenu .topscrollbar,.yuimenu .bottomscrollbar {
+	height: 16px;
+	border: solid 1px #808080;
+	background: #fff url(images/esprite.png) no-repeat 0 0;
+}
+.yuimenu .topscrollbar {
+	border-bottom-width: 0;
+	background-position: center -1342px;
+}
+.yuimenu .topscrollbar_disabled {
+	background-position: center -1314px;	
+}
+.yuimenu .bottomscrollbar {
+	border-top-width: 0;
+	background-position: center -1380px;
+}
+
+.yuimenu .bottomscrollbar_disabled {
+	background-position: center -1290px;	
+}
+
+.eMenuContainer .yuimenuitem {
+	text-align:left;
+	outline: none;
+}
+.eMenuContainer .yuimenuitemlabel {
+	padding: 0 0.9em;
+	color: #666666;
+	text-decoration: none;
+	cursor: default;
+	outline: none;
+	text-transform: uppercase;
+}
+
+.eMenuContainer .yuimenuitem-selected {
+	background: #00285e;
+}
+
+.eMenuContainer .yuimenuitem-selected a {
+	color: white !important;
+}
+
+.eMenuContainer li.yui-button-selectedmenuitem {
+	background-image: none;
+}
+/* BUTTON **************************************************************/
+.yui-button {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.yui-button .first-child {
+	display: block; 
+}
+.yui-button a {
+	text-decoration: none;
+}
+
+.eMenuContainer .yui-button {
+	background: white;
+	border: 1px solid #c6c6c6;
+	margin: 0 0.25em 0 0;	
+}
+.eMenuContainer .yui-button button, .eMenuContainer .yui-button a {
+	color:#666666;
+	font-size:106%;
+	line-height:2;
+	min-height:1.8em;
+	padding:0 2px;
+}
+.yui-split-button button, .eMenuContainer .yui-menu-button button {
+	padding-right: 20px;
+	background-position: 98% -1356px;
+	background-repeat: no-repeat;
+	background-color: #FFF;
+	border:none;
+}
+.yui-menu-button button {
+	background-image:url(images/esprite.png);
+}
+.yui-button-menu,.yui-button-menu div {
+	margin: 0;
+}
+li.yui-button-selectedmenuitem {
+	background: #c6c6c6 url(images/esprite.png) no-repeat scroll 11px -803px;	
+}
+
+li.yui-button-selectedmenuitem .yuimenuitemlabel {
+	color: #666;	
+}
+
+.yui-menu-button em.yui-button-label {
+	font-style: normal;
+	display: block;
+	text-align: left;
+	white-space: nowrap;	
+	overflow: hidden;
+}
+
+.yui-split-button button {
+	background-image: url(images/esprite.png);
+}
+
+.yui-button-focus {
+	border-color: #7D98B8;
+	background-position: 0 -1300px;
+}
+
+.yui-button-focus .first-child {
+	border-color: #7D98B8;
+}
+
+.yui-button-focus button,.yui-button-focus a {
+	color: #000;
+}
+
+.yui-split-button-focus button {
+	background-image: url(images/esprite.png);
+}
+
+.yui-button-hover {
+	border-color: #7D98B8;
+	background-position: 0 -1300px;
+}
+
+.yui-button-hover .first-child {
+	border-color: #7D98B8;
+}
+
+.yui-button-hover button,.yui-button-hover a {
+	color: #000;
+}
+
+.yui-split-button-hover button {
+	background-image: url(images/esprite.png);
+}
+
+.yui-button-active {
+	border-color: #7D98B8;
+	background-position: 0 -1700px;
+}
+
+.yui-button-active .first-child {
+	border-color: #7D98B8;
+}
+
+.yui-button-active button,.yui-button-active a {
+	color: #000;
+}
+
+.yui-split-button-activeoption {
+	border-color: #808080;
+	background-position: 0 0;
+}
+.yui-split-button-activeoption .first-child {
+	border-color: #808080;
+}
+.yui-split-button-activeoption button {
+	background-image: url(images/esprite.png);
+}
+
+/* TOOLBAR *************************************/
+.eToolbarGroup {
+	float: right;
+	clear: both;	
+	margin: 0;
+	padding: 5px 8px 0 0;
+}
+
+.eToolbarGroup a {
+	background-color: transparent;
+	background-image: url(images/esprite.png);
+	cursor: pointer;
+	float: left;
+	height: 18px;
+	margin: 0 0 0 0.5em;
+	text-decoration: none;
+	width: 18px;
+	background-repeat: no-repeat;
+}
+
+#eFlashShow 	{ background-position: 3px -228px; }
+#eTextShow 		{ background-position: -16px -1785px }
+#eCarousellShow { background-position: -15px -1824px; }
+#eImageShow 	{ background-position: 3px -31px; }
+
+#eFlashShow.eToolBarLinkActive,
+#eFlashShow.eToolBarLinkActive:hover		{ background-position: -34px -241px; }
+#eTextShow.eToolBarLinkActive,
+#eTextShow.eToolBarLinkActive:hover 		{ background-position: 1px -1766px; }
+#eCarousellShow.eToolBarLinkActive,
+#eCarousellShow.eToolBarLinkActive:hover 	{ background-position: 1px -1806px; }
+#eImageShow.eToolBarLinkActive,
+#eImageShow.eToolBarLinkActive:hover 		{ background-position: -34px -47px; }
+
+#eFlashShow:hover 	{ background-position: -10px -195px; }
+#eTextShow:hover 	{ background-position: -33px -1766px; }
+
+/* HEADERFOOTER ELEMENT **************************************************************/
+#eHead a{
+	color:#3C6296
+}
+.eLogInContainer {
+	margin: 4px 3px 38px 0;
+}
+.eLogInContainer a{
+	font-size:80%;
+	margin: 0 5px;
+}
+.eSearchFormInput {
+	float: left;
+	height: 16px;
+	margin: 0 3px 0 0;
+	padding: 6px;
+	width: 135px;
+}
+
+.eSearchFormSubmit {
+	width: 40px;
+	height: 30px;
+	background: transparent url(images/esprite.png) no-repeat scroll 2px -1991px;
+	border: none;
+	float: left;
+	cursor: pointer;
+	outline: none;
+}
+
+/* INNER LEFT MENU **************************************************************/
+.eInnerMenu,
+.eInnerMenu ul {
+	margin: 0;
+	padding: 0;
+}
+.eInnerMenu {
+	padding-bottom: 15px;
+}
+.eInnerMenu li {
+	font-size: 1.2em;
+}
+.eInnerMenu li a,
+.eInnerMenu li span {
+	background: transparent url(images/esprite.png) no-repeat scroll 0 -1067px;
+	color: #3c6296;
+	padding: 0 0 0 22px;
+	min-height: 18px;
+	display: block;
+}
+.eInnerMenu li a:hover { 
+	background-position: 0 -1146px;
+	color:#3c6296;
+}
+
+.eInnerMenu ul {
+	padding: 0 0 15px 30px;
+}
+
+.eInnerMenu ul li {
+	font-size: .8em;
+	font-weight: normal;
+	line-height: 18px;
+	list-style-type: none;
+	margin-top: 0.5em;
+}
+
+.eInnerMenu ul li a, 
+.eInnerMenu ul li span,
+.eInnerMenu li ul li a:hover {
+	background-position: -46px -803px;
+	padding: 0 0 0 8px;
+}
+.eInnerMenu .eActiveLink, 
+.eInnerMenu .eActiveGroupLink {	
+	background: transparent url(images/esprite.png) no-repeat scroll 0 -1146px;
+	color: #222222;
+}
+.eInnerMenu ul .eActiveLink {	
+	background: transparent url(images/esprite.png) no-repeat scroll -46px -803px;
+}
+.eActiveMenu{
+	color: #222222;	
+}
+
+/* LISTS *************************************************************/
+.eArrowBullet li {
+	background: url(images/esprite.png) 0 -903px no-repeat;
+	padding-left: 1em; 
+}
+
+.eHorizontal li { 
+	float: left;
+	margin-right: 1em; 
+}
+
+.eAZNav {	/* For Silver A-Z list */
+	font-size: 0.9em;
+	margin: 0;
+	overflow: hidden;
+	padding: 1em 0;
+}
+
+.eAZNav li {
+	list-style: none;
+}
+.eAZ {	
+	margin: 0;
+}
+.eAZ h3 {
+	background: white;
+	margin: 30px 0 0 0;
+	padding: 10px 0 10px 15px;
+}
+
+.eAZ ul {
+	border-bottom: 1px #e2e2e2 solid;
+}
+
+.eAZ li { list-style: none; }
+
+.eAZ ul li {
+	border-top: 1px #e2e2e2 solid;	
+	margin: 0;
+	padding: 10px 0 10px 15px;
+}
+
+.eAZ p {
+	font-size: 1em; 
+	margin: 0;
+}
+
+/* CONTENT ***********************************************************/
+#eContent {
+	width: 100%;
+	min-height: 40em;
+	padding: 3em 0 5em 0;
+}
+
+.eImgContainer {
+	/*background: #CCC;
+	width: 90%;
+	height: 80px;
+	border: 1px solid #333;*/
+}
+
+.eBox {
+	border-top: 1px #e2e2e2 solid;
+	background: #fff;
+	margin-bottom: 2em;
+	padding: 1em;
+	position: relative;
+	overflow: hidden;
+}
+.eBox h2 { margin-top: 0 !important; }
+
+.eBox label {
+	color: #333333;
+	display: block;
+	font-weight: normal;
+}
+.eBox legend {
+	display: none;
+}
+.eDivider {
+	border-bottom: 1px solid #333;
+	padding-bottom: 1em;
+}
+.eImageMiddle {
+	width: 98%;
+	height: 50px;
+}
+.eSpotGroup{
+	margin:0;
+	border-top:1px solid #E2E2E2;
+	padding:1.5em 0;
+}
+.eSpotGroup li{
+	line-height:1.2em;
+}
+
+/* SHARE *************************************************************/
+.eShareBar .eDigg,
+.eShareBar .eTwitter,
+.eShareBar .eFacebook { 
+	border: 1px #e5e5e5 solid;
+	display: block;
+	height: 22px;	
+	text-indent: -9999px;
+	padding-left: 0;
+	width: 22px;
+}
+
+.eShare {
+	border: 0;
+	color: #666;
+	float: left;
+	font-size: 116%;
+	margin-right: 0.5em;
+	padding-top: 3px;	
+}
+
+.eShareBar .ePt { padding-top: 3px; }
+
+.eShareBar a { 
+	font-size: 83%;
+	text-transform: uppercase; 
+}
+/* FLOWPLAYER ************************************************************/
+.eFlowLink{
+	display:block;
+	width:100%;
+	height:300px;
+	margin: 0 0 0 0;
+	margin:0;
+	border-top: 1px solid #CCC;
+	background:#FFF url(images/eflashload.png) center center no-repeat;
+} 
+div.eFlowPlayer {
+	height:30px;
+	float:left;
+	width: 100%;
+	background: #636363;
+	margin: 0 0 1em 0;
+	position:relative;
+}
+div.eFlowPlayer div{
+	float:left;
+
+}
+div.eFlowPlayer .play, 
+div.eFlowPlayer .pause,
+div.eFlowPlayer .mute,
+div.eFlowPlayer .unmute{
+	background-image: url(images/eflowplayersprite.png);
+	background-repeat: no-repeat;
+	background-color:#3b3b3b;
+	text-indent:-9999em;
+	display:block;
+	width:25px;
+	height:25px;
+	cursor:pointer;
+}
+div.eFlowPlayer .play { 
+	background-position:0 4px;
+	float:left;
+}
+div.eFlowPlayer .play:hover {
+	background-color:#959494;
+}
+
+div.eFlowPlayer .pause { 
+	background-position: 0 -34px;
+	float:left;
+}
+
+div.eFlowPlayer .pause:hover {
+	background-color:#565555;
+}
+
+div.eFlowPlayer .mute{
+	background-color:#3b3b3b;
+	background-position:0 -106px;
+	float:right;
+}
+
+div.eFlowPlayer .mute:hover {
+	background-color:#959494;	
+}
+div.eFlowPlayer .time {
+	width:80px;
+	text-align:center;
+	font-size:12px;
+	color:#fff; 
+	padding:7px 0 0 0
+}
+div.eFlowPlayer .time strong {
+	font-weight:normal;
+	color:#999999;
+}
+div.eFlowPlayer .unmute {
+	background-color:#3b3b3b;
+	background-position:0 -62px;
+	float:right;
+}
+div.eFlowPlayer .unmute:hover {
+	background-color:#959494;
+}
+div.track {  
+	left:0;
+	width:100%;
+	cursor:pointer;
+	height:4px;
+	background:#000;
+	clear:both;	
+}
+div.playhead {
+	position:absolute;
+	cursor:pointer; 
+	background-color:#FFFFFF;
+	width:13px;
+	height:4px;
+}
+div.progress{	
+	position:absolute;
+	background:#ef8a08 url(images/eflowplayergrad.png) right no-repeat;
+	width:0px;
+	height:4px;
+}
+ div.buffer {
+ 	position:absolute;
+	background-color:#fff;
+	width:0px;
+	height:4px;
+}
+/* FOOTER ************************************************************/
+#eFooter {
+	background:transparent url(images/ebottomgrad.jpg) repeat-x scroll 0 0;
+	padding:30px 0 9px 0;
+	width:100%;
+	position:relative;
+}
+.eFooterLogoContainer{
+	bottom:0;
+	height:84px;
+	left:0;
+	position:absolute;
+	width:81px;
+}
+.eFooterLogoContainer a{
+	height: 100px;
+	width: 81px;
+	display: block;
+	background-image: url(images/elogosprite.png);
+	background-position: -81px 0;
+	background-repeat: no-repeat;
+}
+
+#eFooter a {
+	color:#3c6296;
+	text-decoration: none;
+	font-size: 83%;
+}
+#eFooter a:hover{
+	text-decoration: underline;	
+}
+.eFooterGroupLeft{
+	display: inline;
+	float:left;
+	margin-left:16em;
+	width:14%;
+}
+.eFooterGroup{
+	float:left;
+	width: 14%;	
+	margin: 0;
+}
+.eFooterGroupRight{
+	float:right;
+	width: 20%;
+	margin: 0;
+}
+#eFooter ul {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+#eFooter ul li {
+	float: none;
+	line-height: 1.2em;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: auto;
+
+}
+.eFooterGroupCenter ul{
+	float:left;	
+	width: 49%;
+	
+}
+.eFooterGroupCenter li{
+	width: 45%;
+}
+#eFooterFormUl{
+	float:right;	
+}
+#eFooter h3 {	
+	font-size: 85%;
+	margin: 0 0 5px;
+	text-transform: uppercase;	
+	color: #666;
+}
+.eFooterDivider{
+	border-top:1px solid #E2E2E2;
+	float:left;
+	margin:1.5em 0 0;
+	padding:1.5em 0 0;
+	width:100%;
+}
+#eFooter label {
+	font-weight:normal;
+	font-size: 80%;
+	color: #666;
+}
+#eCountryMenu{
+	margin: 0 0 0.5em 0;
+}
+
+.eFooterGroupDivider{
+	margin:1em 0 0 0 !important;
+}
+
+/*********************************************************************/
+/* CAROUSEL **********************************************************/
+
+.eCarouselContainer {
+	/*visibility: hidden;*/
+    /*overflow: hidden;*/
+    position: relative;
+    text-align: left;
+ }
+
+.eCarouselContent {
+	margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 225px;
+}
+
+.eCarouselContent ol {
+	margin: 5px 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.eCarouselContent ol li {
+	float: left;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+   	padding-right: 25px;
+}
+
+.eCarouselButton {
+	background: no-repeat;
+	display: block;
+	height: 54px;
+	position: absolute;
+	width: 38px;
+	z-index: 50;
+}
+
+.eCarouselNext,
+.eCarouselPrev {
+	background-image: url(images/esprite.png);
+	top: 7.5em;
+}
+
+.eCarouselNext {
+	background-position: -12px -1482px; 
+	right: 0;	
+}
+
+.eCarouselNext:hover {
+	background-position: -12px -1546px;
+}
+
+.eCarouselPrev {
+	background-position: 0 -1420px;
+	left: 0;	
+}
+
+.eCarouselPrev:hover {
+	background-position: 0 -1610px;
+}
+
+
+/* POSITION TRACKER **************************************************/
+.eCarouselContainer .ePosTracker {
+	position: absolute;
+	top: -5px; 
+	right: 10px;
+	z-index: 50;
+}
+
+.eCarouselContainer .ePosTracker span {
+	background: url(images/esprite.png);
+	background-position: 0 -1673px;
+	display: block;
+	float: left;	
+	height: 9px;
+	margin-left: 6px;
+	width: 9px;
+}
+
+.eCarouselContainer .ePosTracker .active {
+	background-position: -17px -1673px;
+}
+
+/* CAREERS CAROUSEL **************************************************/
+#eCareersCarousel {
+	background: white;
+	padding: 1em 1em 0;	
+	min-height: 285px;	
+}
+
+#eCareersCarousel .eCarouselContent { 
+	width: 100%;	
+}
+
+#eCareersCarousel ol {
+	margin: 0;
+}
+
+#eCareersCarousel li {
+	height: 287px;
+	padding: 0;
+	position: relative;
+	width: 202px;
+}
+
+#eCareersCarousel .eCarouselElement {
+	height: 287px;
+}
+
+#eCareersCarousel .ePlaque {
+	background: #fff url(images/ecarouselsprite.gif) top no-repeat;
+	bottom: 0;
+	left: 0;
+	padding: 1em 1em 2em 1em;
+	position: absolute;
+	width: 178px;
+	z-index: 999;
+}
+
+#eCareersCarousel .ePlaque.p1 { background-position: 0 0; }
+#eCareersCarousel .ePlaque.p2 { background-position: -214px 0; }
+#eCareersCarousel .ePlaque.p3 { background-position: -428px 0; }
+#eCareersCarousel .ePlaque.p4 { background-position: -642px 0; }
+
+#eCareersCarousel .ePlaque a {
+	display: none;
+}
+
+#eCareersCarousel .ePlaque p {
+	font-size: 80%;
+}
+
+#eCareersCarousel .ePlaque span { 
+	display: block;
+	font-size: 120%;
+	white-space: nowrap;
+}
+
+#eCareersCarousel .color { 
+	display: none; 
+}
+
+#eCareersCarousel .active .ePlaque a { 
+	display: block; 
+} 
+
+#eCareersCarousel .active .ePlaque {
+	background-color: #f8f8f8;
+}
+
+#eCareersCarousel .active .color { 
+	display: inline; 
+}
+
+#eCareersCarousel .active .bw { 
+	display: none; 
+}
+
+#eCareersCarousel .ePlaque p { 
+	margin: 0; 
+}
+
+#eCareersCarousel .eCarouselNext { 
+	right: 1em; 
+}
+
+#eCareersCarousel .eCarouselPrev { 
+	left: 1em; 
+	
+}
+
+
+/* QUICK FACTS CAROUSEL **********************************************/
+#eQuickFactsCarousel ol {
+	width: 32000px;
+}
+
+#eQuickFactsCarousel li {
+	width: 250px;
+}
+
+#eQuickFactsCarousel .eCarouselNext,
+#eQuickFactsCarousel .eCarouselPrev {
+	top: 2.5em;
+}
+
+
+/* LANDING PAGE CAROUSEL *********************************************/
+#eLandingPageCarousel {
+	background: white;
+	padding: 1em;
+}
+
+#eLandingPageCarousel ol {
+	width: 32000px;
+	margin: 0;
+}
+
+#eLandingPageCarousel li {
+	height: 254px;
+	position: relative;
+}
+
+#eLandingPageCarousel .eCarouselContent {
+	width: 100%;
+}
+
+#eLandingPageCarousel .eCarouselNext,
+#eLandingPageCarousel .eCarouselPrev {	
+	top: 40%;
+}
+
+#eLandingPageCarousel .eCarouselNext {
+	right: 1em;
+}
+
+#eLandingPageCarousel .eCarouselPrev {
+	left: 1em;
+}
+
+#eLandingPageCarousel li a {
+	background: white;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 2.1em;
+	padding: 1em;
+}
+
+/* FLASH **************************************************/
+
+.eFlashFallback{
+	text-align:left;
+	margin:3em;	
+}
+
+
+/* STORIES CAROUSEL **************************************************/
+#eStoriesCarousel { 
+	background: white;
+}
+
+#eStoriesCarousel .eCarouselContent  {
+	width: 100%;
+}
+
+#eStoriesCarousel ol {
+	width: 32000px;
+}
+
+#eStoriesCarousel .eFluff { padding: 0 3em; }
+
+/* SILVER SPECIFIC **************************************************/
+
+#eNavigationChildrenContainer .yuimenuitem.first-of-type,
+#eLeftMenu ul li ul li ul {
+	display:none;
+}
+/* PRINT **************************************************/
+@media print {
+	
+	body {
+		color:#333333!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif!important;
+	}
+}
+
+

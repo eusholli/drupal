@@ -1,0 +1,388 @@
+<?php // $Id: geo.module,v 1.27 2009/08/07 16:55:12 vauxia Exp $
+
+/**
+ * Geo: Geospatial storage and retrieval.
+ */
+
+define(GEO_SRID_DEFAULT, 4326);
+define(GEO_DEGREE_M, 111206);
+
+define(GEO_TYPE_POINT, 0);
+define(GEO_TYPE_CURVE, 2);
+define(GEO_TYPE_LINESTRING, 3);
+define(GEO_TYPE_SURFACE, 4);
+define(GEO_TYPE_POLYGON, 5);
+define(GEO_TYPE_COLLECTION, 6);
+define(GEO_TYPE_MULTIPOINT, 7);
+define(GEO_TYPE_MULTICURVE, 8);
+define(GEO_TYPE_MULTILINESTRING, 9);
+define(GEO_TYPE_MULTISURFACE, 10);
+define(GEO_TYPE_MULTIPOLYGON, 11);
+
+/**
+ * Call an API function from the geo backend databases.
+ * This function will find and load the database backend files, and call
+ * the requested op from the backend or the default library, as needed.
+ *
+ * @return mixed
+ *  The result of the database operation execution.
+ */
+function geo($op = NULL) {
+  static $backend;
+
+  // Load common functions.
+  module_load_include('inc', 'geo');
+
+  // Load database-specific functions.
+  if (!isset($backend)) {
+    $backend = geo_backend_type();
+    module_load_include('inc', 'geo', 'db/'. $backend);
+  }
+
+  // Call the appropriate API function: If geo_$backend_$op exists, call that.
+  // Otherwise, resort to geo_$op.  This creates a sort of inheritence system.
+  $args = func_get_args();
+  if($args) {
+    $op = array_shift($args);
+    if (!function_exists($func = 'geo_'. $backend .'_'. $op)) {
+      $func = 'geo_'. $op;
+    }
+    if (!function_exists($func)) {
+      drupal_set_message(t('Call to undefined geo operation %op', array('%op' => $op)), 'error');
+      return FALSE;
+    }
+    return call_user_func_array($func, $args);
+  }
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function geo_theme() {
+  $file_path = drupal_get_path('module', 'geo') .'/includes';
+  return array(
+    'geo_formatter_default' => array(
+      'arguments' => array('element' => NULL),
+      'file' => 'geo.formatters.inc',
+      'path' => $file_path,
+      'gis input' => 'wkt',
+    ),
+    'geo_formatter_lat' => array(
+      'arguments' => array('element' => NULL),
+      'file' => 'geo.formatters.inc',
+      'path' => $file_path,
+      'gis input' => 'array',
+    ),
+    'geo_formatter_lon' => array(
+      'arguments' => array('element' => NULL),
+      'file' => 'geo.formatters.inc',
+      'path' => $file_path,
+      'gis input' => 'array',
+    ),
+    'geo_formatter_georss' => array(
+      'arguments' => array('element' => NULL),
+      'file' => 'geo.formatters.inc',
+      'path' => $file_path,
+      'gis input' => 'array',
+    ),
+    'geo_formatter_svg' => array(
+      'arguments' => array('element' => NULL),
+      'file' => 'geo.formatters.inc',
+      'path' => $file_path,
+    ),
+    'geo_fields' => array(
+      'arguments' => array('element' => NULL),
+    ),
+    'geo_latlon' => array(
+      'arguments' => array('element' => NULL),
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_field_formatter_info().
+ */
+function geo_field_formatter_info() {
+  // TODO some other formatters: asKML, asGML, asGeoRSS, etc
+  return array(
+    'default' => array(
+      'label' => t('Well Known Text'),
+      'field types' => geo_field_types(),
+      'gis types' => array('point', 'linestring', 'polygon'),
+      'gis input' => 'wkt',
+    ),
+    'lat' => array(
+      'label' => t('Latitude'),
+      'field types' => geo_field_types(),
+      'gis types' => array('point'),
+      'gis input' => 'array',
+    ),
+    'lon' => array(
+      'label' => t('Longitude'),
+      'field types' => geo_field_types(),
+      'gis types' => array('point'),
+      'gis input' => 'array',
+    ),
+    'georss' => array(
+      'label' => t('GeoRSS'),
+      'field types' => geo_field_types(),
+      'gis types' => array('point', 'linestring', 'polygon'),
+      'gis input' => 'text',
+    ),
+  );
+}
+
+/**
+ * API Function: Return any field types that may contain geospatial data.
+ */
+function geo_field_types() {
+  static $field_types;
+  if (!isset($field_types)) {
+    $field_types = array('geo', 'geo_data');
+    drupal_alter('geo_field_types', $field_types);
+  }
+  return $field_types;
+}
+
+/**
+ * Implementation of hook_content_fieldapi().
+ */
+function geo_content_fieldapi($op, $field) {
+//TODO this will catalog (?) and possibly postprocess geo-fields.
+  $fields = $old_fields = variable_get('geo_fields', array());
+
+  // ANY field with a 'geo_type' value is acknowledged here.
+  if (isset($field['geo_type'])) {
+    switch ($op) {
+      case 'create instance':
+        $fields[$field['field name']] = array($field['geo_type']);
+        break;
+
+      case 'delete instance':
+        unset($fields[$field['field_name']]);
+        break;
+    }
+  }
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function geo_views_api() {
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'geo') .'/includes/views',
+  );
+}
+
+/**
+ * API Function: Format WKB data
+ */
+function geo_wkb_get_data($wkb = NULL, $format = 'text', $fp = NULL, $type = NULL) {
+  module_load_include('inc', 'geo', 'includes/geo.wkb');
+  return _geo_wkb_get_data($wkb, $format, $fp, $type);
+}
+
+/**
+ * API Function: List of available units.
+ */
+function geo_units($unit = NULL) {
+  $units = array(
+    'mi' => t('Miles'),  
+    'km' => t('Kilometers'),
+    'm'  => t('Meters'),
+  );
+
+  return $unit ? $units[$unit] : $units;
+}
+
+/**
+ * API Function: Convert between units.
+ */
+function geo_unit_convert($val, $from_unit, $to_unit) {
+  switch ($from_unit) {
+
+    case 'm': // Meters
+      switch ($to_unit) {
+        case 'km':
+          $val = $val / 1000;
+          break;
+        case 'mi':
+          $val = $val / 1609.344;
+          break;
+      }
+      break;
+
+    case 'km': // Kilometers
+      switch ($to_unit) {
+        case 'm':
+          $val = $val * 1000;
+          break;
+        case 'mi':
+          $val = $val * 0.62137;
+          break;
+      }
+      break;
+
+    case 'mi': // Miles
+      switch ($to_unit) {
+        case 'm':
+          $val = $val * 1609.344;
+          break;
+        case 'km':
+          $val = $val * 1.609344;
+          break;
+      }
+      break;
+  }
+
+  return $val;
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function geo_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+  // Append microformats onto geo node feeds.
+  if ($op == 'rss item' && isset($node->geo_fields)) {
+    $rss = array();
+    foreach ($node->geo_fields as $field_name => $type) {
+      foreach ($node->$field_name as $item) {
+        $rss[] = geo('rss_item', $item['wkb']);
+      }
+    }
+    return $rss;
+  }
+}
+
+/**
+ * Implementation of hook_elements().
+ */
+function geo_elements() {
+  return array(
+    'geo_latlon' => array(
+      '#input' => TRUE,
+      '#process' => array('geo_latlon_process'),
+    ),
+  );
+}
+
+function theme_geo_fields($element) {
+  return $element['#children'];
+}
+
+/**
+ * A #process handler for the latlon element.
+ */
+function geo_latlon_process($element, $edit, $form_state, $form) {
+  $field = $form['#field_info'][$element['#field_name']];
+
+  $element['lat'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Latitude'),
+    '#default_value' => $element['#value']['lat'],
+    '#required' => $element['#required'],
+    '#size' => 12,
+    '#maxlength' => 15,
+  );
+  $element['lon'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Longitude'),
+    '#default_value' => $element['#value']['lon'],
+    '#required' => $element['#required'],
+    '#size' => 12,
+    '#maxlength' => 15,
+  );
+  return $element;
+}
+
+function theme_geo_latlon($element) {
+  $output = '<div class="container-inline">'. $element['#children'] .'</div>';
+  return theme('form_element', $element, $output);
+}
+
+function geo_element_set_value($element, &$form_state) {
+  if (!$element['#value']) $element['#value'] = $element['#default_value'];
+  if (!isset($element['#gis_input_value'])) $element['#gis_input_value'] = $element['#value'];
+
+  $value = geo_value_convert($element['#value'], $element['#gis_input'], $element['#gis_output']);
+  $element['#gis_output_value'] = $value;
+  form_set_value($element, $value, $form_state);
+  return $element;
+}
+
+function geo_value_convert($value, $in = 'array', $out = 'wkt') {
+  // TODO We are taking the element's requested input and output formats, and
+  // making the necessary adjustments.  This needs to be refactored and set up
+  // in some kind of a handler model.  For now it's a proof-of-concept that
+  // gets the UI & existing inputs up and running.
+  switch ($in) {
+    case 'array':
+      if ($out == 'wkt') {
+        $value = geo('wkt_from_point', $value['lat'], $value['lon']);
+      }
+      break;
+  }
+
+  return $value;
+}
+
+/**
+ * Implementation of hook_gis_input_info().
+ */
+function geo_gis_input_info($gis_type = NULL) {
+  $inputs = array(
+    'geo_wkt' => array(
+      'label' => t('Well known text'),
+      'gis input' => 'wkt',
+      'safe reverse' => TRUE,
+      'gis types' => array('point', 'linestring', 'polygon'),
+      'element' => array(
+        '#type' => 'textfield',
+      ),
+    ),
+    'geo_latlon' => array(
+      'label' => t('Latitude/Longitude'),
+      'gis input' => 'array',
+      'safe reverse' => TRUE,
+      'gis types' => array('point'),
+      'element' => array(
+        '#type' => 'geo_latlon',
+      ),
+    ),
+  );
+  return $inputs;
+}
+
+function geo_set_pre_render(&$element) {
+  if (!isset($element['#pre_render']) 
+    || !in_array('geo_field_convert_value', $element['#pre_render'])) {
+    $element['#pre_render'][] = 'geo_field_convert_value';
+  }
+}
+
+function geo_field_convert_value($element) {
+  foreach (element_children($element) as $key) {
+    if (isset($element[$key]['field']) && $element[$key]['field']['#access']) {
+      $field = $element[$key]['field'];
+      $theme = $field['#single'] ? $field['items'][0]['#theme'] : $field['items']['#theme'];
+      foreach ($field['items'] as $i => $item) {
+        if (is_array($item) && isset($item['#item'])) {
+          $element[$key]['field']['items'][$i]['#item'] = geo_set_value($item['#item'], $theme);
+        }
+      }
+    }
+  }
+  return $element;
+}
+
+function geo_set_value($item, $theme) {
+  init_theme();
+  $registry = theme_get_registry();
+  
+  if ($format = $registry[$theme]['gis input']) {
+    $value = geo_wkb_get_data($item['wkb'], $format);
+    $item[$format] = $value['value'];
+  }
+  return $item;
+}

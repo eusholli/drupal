@@ -1,0 +1,325 @@
+/* Ericsson hacks filters for specific browsers */
+/* This CSS is not valid */
+
+/** CONTENT override from edisposition.css **/
+
+.eCol1 {
+	*width:99.9%;
+}
+
+.eCol2w25{
+	*width:24.9%;
+}
+.eCol2w33m {
+	*width: 24%;
+}
+
+.eCol2w50{
+	*width:49.9%;
+}
+.eCol2w50m {
+	*width: 46.9%;
+}
+.eCol2w75{
+	*width:74.9%;
+}
+.eCol3w25{
+	*width:24.9%;
+}
+.eCol3w33{
+	*width:32.9%;
+}
+.eCol3w50{
+	*width:49.9%;
+}
+.eCol4w25{
+	*width:24.9%;
+}
+
+* html ul.eColGroup li {
+	zoom: 1;
+}
+
+#eContent h1 {
+	/**width: auto;*/
+}
+
+.eColGroup {
+	*width: 99.9%;
+	*overflow: hidden;
+	_position: relative;
+}
+
+.eCol1,
+.eCol3w10,
+.eCol2w15,
+.eCol2w15m,
+.eCol2w25,
+.eCol2w25m,
+.eCol2w33,
+.eCol2w33m,
+.eCol3w33m,
+.eCol3w45m,
+.eCol3w80,
+.eCol2w50,
+.eCol2w50m,
+.eCol2w66,
+.eCol2w66m,
+.eCol2w75,
+.eCol2w75m,
+.eCol2w85,
+.eCol2w85m,
+.eCol3w25,
+.eCol3w25m,
+.eCol3w50,
+.eCol3w50m,
+.eCol3w33,
+.eCol4w25,
+.eCol4w25m {	
+	*position: relative;
+	*display: inline;
+}
+
+
+/* HEAD ********************************************************************/
+
+#eHead {
+	_height: 120px;
+}
+
+#eGlobalMenu {
+	_zoom: 1;
+	_padding-top: 0;
+}
+
+#eGlobalMenu .yuimenubaritemlabel {
+	*position: relative;
+}
+
+.yuimenubar ul {
+	*zoom: 1;
+}
+.yuimenubar .yuimenu ul {
+	*zoom: normal;
+}
+.eHeadMenu .yuimenubaritemlabel {
+	*position: relative;
+}
+#eGlobalMenu .yuimenubarnav .yuimenubaritemlabel,
+#eHeaderToolMenu .yuimenubarnav .yuimenubaritemlabel{
+	*display: inline-block;
+}
+#eGlobalMenu .yuimenubarnav .yuimenubaritemlabel-selected ,
+#eHeaderToolMenu .yuimenubarnav .yuimenubaritemlabel-selected {
+	*left: -3px;
+}
+#eHeaderToolMenu .yuimenu{
+	*width: 692px;
+}
+#eHeaderToolMenu ul { *float: right; }
+.eHeadMenu .yuimenu {
+	*line-height: 1.45;
+}
+.eHeadMenu .yuimenu .bd {
+	*zoom: 1;
+	_zoom: normal;	
+}
+
+.eHeadMenu .yuimenuitem {
+	_border-bottom: solid 1px #fff;
+}
+.eHeadMenu .yui-menu-shadow-visible {
+	opacity: .22;
+	filter: alpha(opacity=22);
+	_display: none !important; /* Hot fix - remove the shadow from IE6 */
+}
+
+/* DROPDOWN MENU **************************************************************/
+
+#eGlobalMenu .yuimenu {
+	*width: auto !important;
+	_width: 800px !important;
+}
+
+.eInnerMenu li {
+	_zoom: 1;	
+}
+
+.eMenuContainer .yuimenubar {
+	*line-height: 1.9;
+}
+.eMenuContainer .yuimenubaritemlabel {
+	*position: relative;
+}
+.eMenuContainer .yuimenubarnav .yuimenubaritemlabel {
+	*display: inline-block;
+}
+
+.eMenuContainer .yuimenubarnav .yuimenubaritemlabel-selected {
+	*left: -1px;
+}
+.eMenuContainer .yuimenu {
+	*line-height: 1.45;	
+}
+.eMenuContainer .yuimenu .bd { 
+	*zoom: 1;
+	_zoom: normal;	
+}
+.eMenuContainer .yuimenu .yuimenu .bd {
+	*zoom: normal;
+}
+.eMenuContainer .yuimenuitem {
+	_border-bottom: solid 1px #fff;
+}
+.eMenuContainer .yui-menu-shadow-visible {
+	opacity: .12;
+	filter: alpha(opacity = 12);
+}
+
+#eCountry .bd {
+	_float:right;
+	*padding-right:18px;
+}
+.eHeaderToolMenuGroup{
+	_float:right;
+	*float:left !important;	
+}
+
+/* CAROUSELL **************************************************************/
+
+.eCarouselContainer {
+    zoom: 1;
+}
+.eCarouselContent ol li {
+   	*float: none;
+   	*display: inline-block;
+   	*zoom: 1;
+   	*display: inline;   
+}
+
+#eCareersCarousel li,
+#eCareersCarousel .ePlaque {
+	zoom: 1;
+}
+#eLandingPageCarousel li a {
+	opacity: 0.5;
+}
+
+
+/* BUTTON **************************************************************/
+
+.yui-button {
+	display: -moz-inline-box;
+}
+
+.yui-button .first-child {
+	*display: inline-block;
+}
+.yui-button button,.yui-button a {
+	*display: inline-block;
+}
+.yui-button button {
+	*overflow: visible;
+}
+.yui-button .first-child {
+	_margin: 0;
+}
+.yui-button button,.yui-button a {
+	*line-height: 1.7;
+	*min-height: auto;
+}
+.yui-button a {
+	*line-height: 1.875; 
+	*padding-bottom: 1px;
+}
+.yui-button{
+	*padding-left:4px;
+}
+.yui-menu-button em.yui-button-label {
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+
+
+/* FLOWPLAYER **********************************************************/
+
+div.buffer {
+	opacity:0.1;
+	filter: alpha(opacity=10);
+}
+
+
+/* No PNG SUPPORT FOR IE ***********************************************/
+
+.eArrow,
+.eArrowLeft,
+.eIcon,
+form .eSearch .eImageSubmit,
+#eHeaderToolMenu .yuimenubaritemlabel,
+.eMenuContainer .yuimenubar,
+.yuimenu .topscrollbar,
+.yuimenu .bottomscrollbar,
+.yui-menu-button button,
+li.yui-button-selectedmenuitem,
+.yui-split-button button,
+.yui-split-button-focus button,
+.yui-split-button-hover button,
+.yui-split-button-activeoption button, 
+.eToolbarGroup a,
+.eSearchFormSubmit, 
+.eInnerMenu li a,
+.eInnerMenu li span,
+.eInnerMenu .eActiveLink, 
+.eInnerMenu .eActiveGroupLink,
+.eInnerMenu ul .eActiveLink,
+.eArrowBullet li,
+.eCarouselNext,
+.eCarouselPrev,
+.eCarouselContainer .ePosTracker span{
+	_background-image: url(/shared/eipa/images/esprite.gif);
+}
+
+/* HERO  *******************************************************/
+
+#eTextShowTab{
+	*width:auto;
+	*float:none;	
+	
+}
+
+/* PAGE SPECIFIC *******************************************************/
+
+#eSearchForm fieldset { 
+	*width: 198px;
+}
+
+.eFootPuff {
+	_height: 238px;
+}
+
+
+/* FOOTER **************************************************************/
+#eFooter ul { 	
+	zoom: 1; 
+}
+#eFooter ul li {
+	*width: 160px;
+}
+#eFooterFormUl li{
+	*width: 20em !important;
+}
+
+
+/* OTHER ***************************************************************/
+
+.sIFR-active h1.eH1SifrBlueScarlet {
+	margin-left: 0px;
+}
+
+form.eTaleoForm input {
+	*width: auto;
+}
+
+#eTextShowTab {
+	_zoom: 1;
+}

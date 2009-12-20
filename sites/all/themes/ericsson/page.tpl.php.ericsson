@@ -1,0 +1,1659 @@
+
+
+
+
+
+
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- Source is http://www.ericsson.com/ -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<title>Ericsson</title>
+	<meta name="robots" content="index,follow" />
+	<meta name="rights" content="http://www.ericsson.com/legal" />
+	
+		<meta name="abstract" content="Ericsson"/>
+		<meta name="description" content="Ericsson"/>
+		
+	
+	
+		
+		<link rel="stylesheet" type="text/css" href="Ericsson_files/sifr.css" />
+				
+		<link rel="stylesheet" type="text/css" href="Ericsson_files/ebase.css" />		
+		<link rel="stylesheet" type="text/css" href="Ericsson_files/elayout.css" />
+		
+	
+	
+	
+		<link rel="stylesheet" type="text/css" href="Ericsson_files/ehomepage.css" />
+	
+	
+		
+		<link rel="stylesheet" type="text/css" href="Ericsson_files/ehacks.css" />
+	
+	
+	</head>
+	<body class="ePageType1">
+	
+	
+	
+		<div id="eBodyContainer">					
+			<div id="eHead">
+			
+			 
+				
+<div id="eHeadNavigation">
+	<p class="eLogoContainer"><a id="eHeaderLogo" title="Ericsson Home" href="/"><span class="eHide">Ericsson</span></a></p>
+	<div id="eHeaderToolMenu" class="eHeadMenu yuimenubar yuimenubarnav">
+	 	<div class="bd">
+        	<ul class="first-of-type">
+        		<li class="yuimenubaritem first-of-type"><a id="eLoginLink" title="Login" class="yuimenubaritemlabel" href="/login">Login</a></li>
+            	<li class="yuimenubaritem">
+					<a id="eCountryLink" class="yuimenubaritemlabel" href="/ericsson/worldwide/index.shtml" title="Your Local Ericsson site">Your Local Ericsson site</a>
+					<div id="eCountry" class="yuimenu">
+						<div class="bd">
+								<p>ERICSSON WORLDWIDE</p>
+								<ul class="eHeaderToolMenuGroup">
+		                   			<li class="eHeaderToolMenuLabel">EUROPE</li>
+		                   			<li><a href="http://www.ericsson.com/at/" title="Austria">Austria</a></li>
+		                   			<li><a href="http://www.ericsson.com/by/" title="Belarus">Belarus</a></li>
+		                   			<li><a href="http://www.ericsson.com/be/" title="Belguim">Belgium</a></li>
+		                   			<li><a href="http://www.ericsson.com/cz/" title="Ceska republika">Ceska republika</a></li>	
+		                   			<li><a href="http://www.ericsson.com/hr/" title="Croatia">Croatia</a></li>
+		                   			<li><a href="http://www.ericsson.com/dk/" title="Denmark">Denmark</a></li>
+		                   			<li><a href="http://www.ericsson.com/ee/" title="Estoni">Estonia</a></li>
+		                   			<li><a href="http://www.ericsson.com/fi/" title="Finland">Finland</a></li>
+		                   			<li><a href="http://www.ericsson.com/fr/" title="France">France</a></li>	
+		                   			<li><a href="http://www.ericsson.com/de/" title="Germany">Germany</a></li>
+		                   			<li><a href="http://www.ericsson.com/hu/" title="Hungary">Hungary</a></li>
+		                   			<li><a href="http://www.ericsson.com/it/" title="Italy">Italy</a></li>
+		                   			<li><a href="http://www.ericsson.com/kz/" title="Kazakhstan">Kazakhstan</a></li>
+		                   			<li><a href="http://www.ericsson.com/lv/" title="Latvia">Latvia</a></li>
+		                   			<li><a href="http://www.ericsson.com/lt/" title="Lithuania">Lithuania</a></li>	
+		                   	    </ul>
+		                   	    <ul class="eHeaderToolMenuGroup">
+		                   			<li class="eHeaderToolNoMenu"><a href="http://www.ericsson.com/mk/" title="Macedonia">Macedonia</a></li>	
+		                   			<li><a href="http://www.ericsson.com/no/" title="Norway">Norway</a></li>
+		                   			<li><a href="http://www.ericsson.com/pl/" title="Poland">Poland</a></li>
+		                   			<li><a href="http://www.ericsson.com/pt/" title="Portugal">Portugal</a></li>
+		                   			<li><a href="http://www.ericsson.com/ru/" title="Russia">Russia</a></li>
+		                   			<li><a href="http://www.ericsson.com/sk/" title="Slovakia">Slovakia</a></li>
+		                   	    	<li><a href="http://www.ericsson.com/es/" title="Spain">Spain</a></li>	
+		                   			<li><a href="http://www.ericsson.com/se/" title="Sweden">Sweden</a></li>
+		                   			<li><a href="http://www.ericsson.com/ch/" title="Switzerland">Switzerland</a></li>
+		                   			<li><a href="http://www.ericsson.com/nl/" title="The Netherlands">The Netherlands</a></li>
+		                   			<li><a href="http://www.ericsson.com/tr/" title="Turkey">Turkey</a></li>
+		                   			<li><a href="http://www.ericsson.com/ua/" title="Ukraine">Ukraine</a></li>
+		                   			<li><a href="http://www.ericsson.com/uk/" title="UK and Ireland">UK and Ireland</a></li>
+		                   			<li><a href="http://www.ericsson.com/uz/" title="Uzbekistan">Uzbekistan</a></li>
+		                   	    </ul>
+		                   	    <ul class="eHeaderToolMenuGroup">
+		                   			<li class="eHeaderToolMenuLabel">NORTH AMERICA</li>
+		                   			<li><a href="http://www.ericsson.com/ca/" title="Canada">Canada</a></li>	
+		                   			<li class="eHeaderLiEnd"><a href="http://www.ericsson.com/us/" title="USA">USA</a></li>
+		                   			<li class="eHeaderToolMenuLabel">SOUTH AMERICA</li>
+		                   			<li><a href="http://www.ericsson.com/br/" title="Brazil">Brazil</a></li>
+		                   			<li><a href="http://www.ericsson.com/mx/" title="Mexico">Mexico</a></li>
+		                   	    </ul>
+		                   	    <ul class="eHeaderToolMenuGroup">
+		                   			<li class="eHeaderToolMenuLabel">ASIA PACIFIC</li>
+		                   			<li><a href="http://www.ericsson.com/au/" title="Australia">Australia</a></li>	
+		                   			<li><a href="http://www.ericsson.com/bd/" title="Bangladesh">Bangladesh</a></li>
+		                   			<li><a href="http://www.ericsson.com/cn/" title="China">China</a></li>
+		                   			<li><a href="http://www.ericsson.com/in/" title="India - Sri Lanka">India - Sri Lanka</a></li>
+		                   			<li><a href="http://www.ericsson.com/id/" title="Indonesia">Indonesia</a></li>
+		                   			<li><a href="http://www.ericsson.com/jp/" title="Japan">Japan</a></li>	
+		                   			<li><a href="http://www.ericsson.com/kr/" title="Korea">Korea</a></li>
+		                   			<li><a href="http://www.ericsson.com/nz/" title="New Zealand">New Zealand</a></li>	
+		                   			<li><a href="http://www.ericsson.com/ph/" title="Philippines">Philippines</a></li>
+		                   			<li><a href="http://www.ericsson.com/tw/" title="Taiwan">Taiwan</a></li>
+		                   	    </ul>
+						</div>
+					</div>                                        
+				</li>
+				
+            </ul>
+       </div>
+	 </div>
+
+	<form id="eSearchForm" action="/search/query.html" method="get">
+		<fieldset>	
+			<input name="charset" value="UTF-8" type="hidden" />
+			<input id="eSearchFormInput1" name="qt" value="" class="eSearchFormInput" type="text" />
+			<input id="eSearchFormSubmit1" name="search" value="" class="eSearchFormSubmit" type="submit" />
+		</fieldset>
+	<div style="display: none;"><input type="hidden" name="_sourcePage" value="cPpa7U5BITQWn8JHzWcGm8oyTy03Qa4ui5bp9VVigOHIG6NbPrv2VY9cCs3Sk2Du" /><input type="hidden" name="__fp" value="9vFRFOhfAu8=" /></div></form>
+
+		<div id="eGlobalMenu" class="eHeadMenu yuimenubar yuimenubarnav">
+			
+			<div class="bd">
+				<ul class="first-of-type">
+				
+				
+				
+				
+					
+					
+				
+					
+					
+					
+					
+					<li class="yuimenubaritem first-of-type"><a id="e1Link" title="The Company" class="yuimenubaritemlabel " href="/thecompany">The Company</a>
+						
+						
+						<div id="e1Menu" class="yuimenu">
+							<div class="bd">
+								
+								
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/man_boat_80x80.jpg" alt="Corporate Information"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Corporate Information</h6></li>
+									
+									
+										<li>The official stuff. Find out facts, figures and other important information about  Ericsson.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/ericsson/corpinfo/index.shtml">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/sustainability_80x80.jpg" alt="Corporate Responsibility"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Corporate Responsibility</h6></li>
+									
+									
+										<li>We take our role as a good corporate citizen seriously.Find out how we play an important role in the societies where we operate and how we are contributing to a sustainable future.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/ericsson/corporate_responsibility/index.shtml">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+								<ul class="eGlobalMenuGroup eGlobalMenuGroupLast">	
+									
+									
+								
+									
+	                   					<li><img src="Ericsson_files/news80x80.jpg" alt="Press"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Press</h6></li>
+									
+									
+										<li>Things are happening. Find out the latest by visiting our Press Room. Includes video  reports and news articles.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/ericsson/news/index.shtml">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+	                   	   		 
+	                   	   		 
+	                   	   		 
+	                   	   		 <ul class="eGlobalMenuGroupLinks">
+	                   	   		 	
+									
+									<li>
+		                   				<a rel="taleo" href="/ericsson/investors/index.shtml">Investors</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/ericsson/industryanalysts/index.shtml">Industry Analysts</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/ericsson/press/index.shtml">Press</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/ericsson/sponsorships/index.shtml">Sponsorships</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/ericsson/events/index.shtml">Events</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+							</div>
+						</div>
+						      
+					</li>
+					
+				
+					
+					
+					
+					
+					<li class="yuimenubaritem first-of-type"><a id="e2Link" title="Technology" class="yuimenubaritemlabel " href="/technology">Technology</a>
+						
+						
+						<div id="e2Menu" class="yuimenu">
+							<div class="bd">
+								
+								
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091120_labs_80x80.jpg" alt="Ericsson Labs"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Ericsson Labs</h6></li>
+									
+									
+										<li>Turn your creativity into innovative mobile applications. Get tools and APIs, and meet experts and other developers, at Ericsson Labs.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/technology/labs.shtml">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091120_opensource_80x80.jpg" alt="Open Source"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Open Source</h6></li>
+									
+									
+										<li>Harness the power of developer communities. Find out about our involvement in Open Source.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/technology/opensource/index.shtml">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+								<ul class="eGlobalMenuGroup eGlobalMenuGroupLast">	
+									
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091120_review_man_80x80.jpg" alt="Ericsson Review"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Ericsson Review</h6></li>
+									
+									
+										<li>Get the latest in-depth analysis of technologies, and research. Includes our new Technology Update digital edition.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/ericsson/corpinfo/publications/review/index.shtml">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+	                   	   		 
+	                   	   		 
+	                   	   		 
+	                   	   		 <ul class="eGlobalMenuGroupLinks">
+	                   	   		 	
+									
+									<li>
+		                   				<a rel="taleo" href="/technology/research_papers/index.shtml">Journal &amp; Conference Papers</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/technology/licensing_programs/index.shtml">Licensing Programs</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/technology/whitepapers/index.shtml">White Papers</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+							</div>
+						</div>
+						      
+					</li>
+					
+				
+					
+					
+					
+					
+					<li class="yuimenubaritem first-of-type"><a id="e3Link" title="Your Business" class="yuimenubaritemlabel " href="/yourbusiness">Your Business</a>
+						
+						
+						<div id="e3Menu" class="yuimenu">
+							<div class="bd">
+								
+								
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091122_cut_costs_80x80.jpg" alt="Cut Costs, Create Cash"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Cut Costs, Create Cash</h6></li>
+									
+									
+										<li>It boils down to getting the most out of capital investments and operating costs, and generating more revenue. It&#039;s not rocket science. It&#039;s telecom.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/yourbusiness/telecom_operators/cut_costs_create_cash">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091122_transform_today_80x80.jpg" alt="Transform Today"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Transform Today</h6></li>
+									
+									
+										<li>Today&#039;s business challenges turn into opportunities when you have the right network. And a transformed network does more than transform business. It can transform your future.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/yourbusiness/telecom_operators/transform_today">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+								<ul class="eGlobalMenuGroup eGlobalMenuGroupLast">	
+									
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091122_make_it_mobile_80x80.jpg" alt="Make It Mobile"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Make It Mobile</h6></li>
+									
+									
+										<li>When voice went mobile, it revolutionized business. Mobile broadband is doing the same for data, and that promises to revolutionize the world.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/yourbusiness/telecom_operators/make_it_mobile">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+	                   	   		 
+	                   	   		 
+	                   	   		 
+							</div>
+						</div>
+						      
+					</li>
+					
+				
+					
+					
+					
+					
+					<li class="yuimenubaritem first-of-type"><a id="e4Link" title="Our Portfolio" class="yuimenubaritemlabel " href="/ourportfolio">Our Portfolio</a>
+						
+						
+						<div id="e4Menu" class="yuimenu">
+							<div class="bd">
+								
+								
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091122_climber_80x80.jpg" alt="Operator Solutions"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Operator Solutions</h6></li>
+									
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/ourportfolio/telecom-operators/evolve-communication-services">Evolve Communication Services</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/telecom-operators/maximize-connectivity-business">Maximize Connectivity Business</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/telecom-operators/monitize-data-and-network-assets">Monetize Data and Network Assets</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/telecom-operators/monitize-data-and-network-assets">Improve Operation Efficiency</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/telecom-operators/expand-and-optimize-networks">Expand and Optimize Networks</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/telecom-operators/expand-into-new-value-chains">Expand into New Value Chains</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/network">Network Areas</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/a-to-z">Portfolio A-Z</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091122_powermodule_80x80.jpg" alt="Products"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Products</h6></li>
+									
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/core-networks">Core Networks</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/network-management-products">Network Management Products</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/radio-access-network">Radio Access Network</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/site-products">Site Products</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/wireline-access">Wireline Access</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/multimedia">Multimedia</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/cables-and-interconnect-products">Cables and Interconnect Products</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/power-modules">Power Modules</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/national-security-and-public-safety-products">National Security &amp; Public Safety Products</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/optical-networks">Optical Networks</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/microwave-networks">Microwave Networks</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/ip-networking">IP Networking</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/products/mobile-broadband-modules">Mobile Broadband Modules</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+								<ul class="eGlobalMenuGroup eGlobalMenuGroupLast">	
+									
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091122_escalator_80x80.jpg" alt="Services"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Services</h6></li>
+									
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/ourportfolio/services/managed-services">Managed Services</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/services/systems-integration">Systems Integration</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/services/customer-support">Customer Support</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/services/consulting">Consulting</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/services/learning-services">Learning Services</a>
+	                   				</li>
+	                   				
+									
+								
+								
+								
+									<li>
+								
+								
+											<a rel="taleo" href="/ourportfolio/services/network-roll-out">Network Roll-Out</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+	                   	   		 
+	                   	   		 
+	                   	   		 
+	                   	   		 <ul class="eGlobalMenuGroupLinks">
+	                   	   		 	
+	                   					<li class="eGlobalMenuLabel"><h6>View by customer type:</h6></li>
+									
+									
+									<li>
+		                   				<a rel="taleo" href="/ourportfolio/government">Government</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/ourportfolio/media-industry">Media Industry</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/ourportfolio/utility-industry">Utility Industry</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/ourportfolio/transport-industry">Transport Industry</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+							</div>
+						</div>
+						      
+					</li>
+					
+				
+					
+					
+					
+					
+					<li class="yuimenubaritem first-of-type"><a id="e5Link" title="Careers" class="yuimenubaritemlabel " href="/careers">Careers</a>
+						
+						
+						<div id="e5Menu" class="yuimenu">
+							<div class="bd">
+								
+								
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091116_jobopenings_80x80.jpg" alt="Job Openings"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Job Openings</h6></li>
+									
+									
+										<li>Looking for a career with us? Find out more about our latest job openings and how to search and apply.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/careers/browse/job_openings_20091109121612">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+									
+								<ul class="eGlobalMenuGroup">	
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091116_students_80x80.jpg" alt="Students &amp; Young Professionals"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Students &amp; Young Professionals</h6></li>
+									
+									
+										<li>Check out our graduate programs and local career activities.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/careers/student/student_and_young_professionals_20091106092323">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+								
+									
+								<ul class="eGlobalMenuGroup eGlobalMenuGroupLast">	
+									
+									
+								
+									
+	                   					<li><img src="Ericsson_files/091116_excellerate_80x80.jpg" alt="Excellerate program"/></li>
+	                   				
+	                   				
+	                   					<li><h6>Excellerate program</h6></li>
+									
+									
+										<li>Do you have what it takes to become a leader? It&#039;s time to apply.</li>
+									
+									
+									
+								
+								
+									<li class="ePt">
+								
+								
+								
+											<a rel="taleo" href="/careers/student/excellerate">LEARN MORE</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+	                   	   		 
+	                   	   		 
+	                   	   		 
+	                   	   		 <ul class="eGlobalMenuGroupLinks">
+	                   	   		 	
+									
+									<li>
+		                   				<a rel="taleo" href="/careers/whatwedo/what_we_do_20091106092341">What We Do</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/careers/ourfuturetogether">Our Future Together</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="/careers/lifeatericsson">Life at Ericsson</a>
+	                   				</li>
+	                   				
+									<li>
+		                   				<a rel="taleo" href="https://tas-ericsson.taleo.net/careersection/2/profile.ftl">Access Your Profile</a>
+	                   				</li>
+	                   				
+	                   	   		 </ul>
+	                   	   		 
+							</div>
+						</div>
+						      
+					</li>
+					
+				
+					
+					
+				
+					
+					
+				 
+				</ul>
+				
+			</div>
+			
+		</div>
+	</div>
+
+			 
+			 </div>
+		     <div id="eContent">
+		     	
+				
+				<div class="eColGroup" id="eToolbarGroupContainer">
+		     		<div class="eCol2w75">
+		     			<h1>Welcome to Ericsson</h1>
+		     		</div>
+		     		<div class="eCol2w25">
+						<p id="eToolbarGroup" class="eToolbarGroup">
+							<a id="eFlashShow" class="eToolBarLink eToolBarLinkActive" title="Flashview"><span class="eHide">Flash</span></a>
+							<a id="eTextShow" class="eToolBarLink"  title="Textview"><span class="eHide">Text</span></a>
+						</p>				
+					</div>
+				</div>
+				
+				<div class="eColGroup">		     	
+	     			<div class="eCol1 eAlignCenter">
+	     				<div id="eFlashShowTab" class="eTab eShow">
+		     				<div id="eHomePageBigFlash" class="eFlash" style="height:333px;display:inherit" >
+		     					<div class="eColGroup eFlashFallback" id="eFlashFallback1">
+		     						<ul class="eStructural">
+		     							<li><h4>The version of the Flash player installed on your computer is outdated or missing.</h4></li>
+	     							<li><a href="http://www.adobe.com/products/flashplayer/" title="Flash player download">Please download and install the latest version</a></li>
+		     						</ul>
+		     					</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="eColGroup">
+					<div class="eCol1w100">	
+	     			 	<div id="eTextShowTab" class="eTab">
+							<h2 class="eH2Sifr">  </h2>
+							<h3 class="eH3Sifr">A WORLD OF COMMUNICATION</h3>
+	     			 		<div class="eColGroup eFlashFallback eBt eBb" id="eFlashFallback2">
+	     						<ul class="eStructural">
+	     							<li><h4>The version of the Flash player installed on your computer is outdated or missing.</h4></li>
+	     							<li><a href="http://www.adobe.com/products/flashplayer/" title="Flash player download">Please download and install the latest version</a></li>
+	     						</ul>
+	     					</div>
+							<p>Stories</p>
+							
+							
+								
+									<div class="eColGroup ePb eMt">		
+													
+										<div class="eCol3w33">
+											<p class="eLeft eMr">
+												<a href="/thecompany/stories/091119_aiming_for_goals_and_gold_20091119174153"><img src="Ericsson_files/091119_london2012_90x90.jpg" alt="AIMING FOR GOALS, AND GOLD" /></a>
+											</p>
+											<h4 class="eTabh4">   </h4>
+											<h5 class="eTabh5">AIMING FOR GOALS, AND GOLD</h5>
+											<p><a href="/thecompany/stories/091119_aiming_for_goals_and_gold_20091119174153"><strong>LEARN MORE</strong></a></p>												
+										</div>	
+																	
+							
+													
+										<div class="eCol3w33">
+											<p class="eLeft eMr">
+												<a href="/thecompany/stories/091119_always_on_the_move_20091119120036"><img src="Ericsson_files/091119_skanska_90x90.jpg" alt="ALWAYS ON THE MOVE" /></a>
+											</p>
+											<h4 class="eTabh4">   </h4>
+											<h5 class="eTabh5">ALWAYS ON THE MOVE</h5>
+											<p><a href="/thecompany/stories/091119_always_on_the_move_20091119120036"><strong>LEARN MORE</strong></a></p>												
+										</div>	
+																	
+							
+													
+										<div class="eCol3w33">
+											<p class="eLeft eMr">
+												<a href="/thecompany/stories/091119_weaving_the_future_20091119111205"><img src="Ericsson_files/091119_rwanda_90x90.jpg" alt="WEAVING THE FUTURE" /></a>
+											</p>
+											<h4 class="eTabh4">  </h4>
+											<h5 class="eTabh5">WEAVING THE FUTURE</h5>
+											<p><a href="/thecompany/stories/091119_weaving_the_future_20091119111205"><strong>LEARN MORE</strong></a></p>												
+										</div>	
+								
+									</div>
+																	
+							
+								
+									<div class="eColGroup ePb eMt">		
+													
+										<div class="eCol3w33">
+											<p class="eLeft eMr">
+												<a href="/thecompany/stories/091118_keeping_connected_in_quake_chaos_20091104151223"><img src="Ericsson_files/091118_china_story_90x90.jpg" alt="CONNECTED IN QUAKE CHAOS" /></a>
+											</p>
+											<h4 class="eTabh4">  </h4>
+											<h5 class="eTabh5">CONNECTED IN QUAKE CHAOS</h5>
+											<p><a href="/thecompany/stories/091118_keeping_connected_in_quake_chaos_20091104151223"><strong>LEARN MORE</strong></a></p>												
+										</div>	
+																	
+							
+													
+										<div class="eCol3w33">
+											<p class="eLeft eMr">
+												<a href="/thecompany/stories/091109_slovakia_112_20091104151223"><img src="Ericsson_files/091109_slovakia112_90x90.jpg" alt="SPEED SAVES LIVES" /></a>
+											</p>
+											<h4 class="eTabh4">  </h4>
+											<h5 class="eTabh5">SPEED SAVES LIVES</h5>
+											<p><a href="/thecompany/stories/091109_slovakia_112_20091104151223"><strong>LEARN MORE</strong></a></p>												
+										</div>	
+																	
+							
+													
+										<div class="eCol3w33">
+											<p class="eLeft eMr">
+												<a href="/thecompany/stories/091103_video_blogger_20091104151223"><img src="Ericsson_files/091103_video_blogger_90x90.jpg" alt="MORE THAN WORDS" /></a>
+											</p>
+											<h4 class="eTabh4">  </h4>
+											<h5 class="eTabh5">MORE THAN WORDS</h5>
+											<p><a href="/thecompany/stories/091103_video_blogger_20091104151223"><strong>LEARN MORE</strong></a></p>												
+										</div>	
+								
+									</div>
+																	
+							
+							<div class="eClear"></div>
+								
+		   				</div>
+		   			</div>
+		     	</div>
+     	
+		
+				
+			<div class="eColGroup eGbt" id="eBannerContainer">
+					<div class="eCol1">
+						
+						
+							<div class="eColGroup">
+						
+						
+						
+						
+							
+							
+								
+							
+						
+						
+						
+							
+							
+								
+							
+											
+							
+								
+									
+									<div class="eCol2w50m ">							
+										<div class="eCol2w33m"><p><a href="/article/091207_ict_copenhagen_20091207111711"><img src="Ericsson_files/091207_climate_180x90.jpg" alt="Taking the ICT message to Copenhagen" width="180px" height="90px"/></a></p></div>							
+										<div class="eCol2w66m"><h2></h2><h3 class="eH3Spot">Taking the ICT message to Copenhagen</h3><p><a href="/article/091207_ict_copenhagen_20091207111711"><strong>LEARN MORE</strong></a></p></div>
+									</div>
+								
+								
+							
+							
+						
+							
+							
+							
+
+						
+						
+						
+						
+						
+						
+							
+							
+								
+							
+						
+						
+						
+							
+								
+							
+							
+											
+							
+								
+									
+									<div class="eCol2w50 ">							
+										<div class="eCol2w33m"><p><a href="/article/091210_green_telecoms_20091210101842"><img src="Ericsson_files/091210_green_awards_180x90.jpg" alt="International praise for green telecoms" width="180px" height="90px"/></a></p></div>							
+										<div class="eCol2w66m"><h2></h2><h3 class="eH3Spot">International praise for green telecoms</h3><p><a href="/article/091210_green_telecoms_20091210101842"><strong>LEARN MORE</strong></a></p></div>
+									</div>
+								
+								
+							
+							
+						
+							
+								</div>
+								<div class="eColGroup">
+							
+							
+							
+
+						
+						
+						
+						
+						
+						
+							
+								
+							
+							
+						
+						
+						
+							
+							
+								
+							
+											
+							
+								
+									
+									<div class="eCol2w50m eBt">							
+										<div class="eCol2w33m"><p><a href="/article/091210_ict_helps_builds_smart_cities_20091210100058"><img src="Ericsson_files/091210_ict_for_smart_cities_180x90.jpg" alt="New ways to communicate create smart low carbon cities" width="180px" height="90px"/></a></p></div>							
+										<div class="eCol2w66m"><h2></h2><h3 class="eH3Spot">New ways to communicate create smart low carbon cities</h3><p><a href="/article/091210_ict_helps_builds_smart_cities_20091210100058"><strong>LEARN MORE</strong></a></p></div>
+									</div>
+								
+								
+							
+							
+						
+							
+							
+							
+
+						
+						
+						
+						
+						
+						
+							
+								
+							
+							
+						
+						
+						
+							
+								
+							
+							
+											
+							
+								
+									
+									<div class="eCol2w50 eBt">							
+										<div class="eCol2w33m"><p><a href="/ericsson/corpinfo/publications/ericsson_business_review/pdf/309/309_cover_story.pdf"><img src="Ericsson_files/091130_ebr_cover_story_180x90.jpg" alt="The power of ICT in times of economic crisis" width="180px" height="90px"/></a></p></div>							
+										<div class="eCol2w66m"><h2></h2><h3 class="eH3Spot">The power of ICT in times of economic crisis</h3><p><a href="/ericsson/corpinfo/publications/ericsson_business_review/pdf/309/309_cover_story.pdf"><strong>LEARN MORE</strong></a></p></div>
+									</div>
+								
+								
+							
+							
+						
+							
+								</div>
+								<div class="eColGroup">
+							
+							
+							
+
+						
+						
+						
+						
+						
+						
+							
+								
+							
+							
+						
+						
+						
+							
+							
+								
+							
+											
+							
+								
+									
+									<div class="eCol2w50m eBt">							
+										<div class="eCol2w33m"><p><a href="/campaign/virtualmultimediaexperience/index.html"><img src="Ericsson_files/091120_virtual_multimedia_experience_180x90.jpg" alt="Explore Virtual Multimedia Experience" width="180px" height="90px"/></a></p></div>							
+										<div class="eCol2w66m"><h2></h2><h3 class="eH3Spot">Explore Virtual Multimedia Experience</h3><p><a href="/campaign/virtualmultimediaexperience/index.html"><strong>LEARN MORE</strong></a></p></div>
+									</div>
+								
+								
+							
+							
+						
+							
+							
+							
+
+						
+						
+						
+						
+						
+						
+							
+								
+							
+							
+						
+						
+						
+							
+								
+							
+							
+											
+							
+								
+									
+									<div class="eCol2w50 eBt">							
+										<div class="eCol2w33m"><p><a href="http://www.facebook.com/pages/Technology-for-good/158578370983"><img src="Ericsson_files/091124_tech_good.jpg" alt="Visit Technology For Good on Facebook" width="180px" height="90px"/></a></p></div>							
+										<div class="eCol2w66m"><h2></h2><h3 class="eH3Spot">Visit Technology For Good on Facebook</h3><p><a href="http://www.facebook.com/pages/Technology-for-good/158578370983"><strong>LEARN MORE</strong></a></p></div>
+									</div>
+								
+								
+							
+							
+						
+							
+							
+								</div>
+							
+							
+
+						
+						
+						</div>
+			</div> 
+		
+		
+
+			</div>
+			<div id="eFooter">
+			
+			
+				
+	<p class="eFooterLogoContainer">
+		<a id="eFooterLogo" href="/" title="Ericsson Home"><span class="eHide">Ericsson</span></a>
+	</p>
+	<div class="eFooterGroupLeft">
+
+	    <h3>This is Ericsson</h3>
+    	<ul>
+    		
+			
+			
+			
+			
+			
+			
+			<li><a title="The Company" href="/thecompany">The Company</a></li>
+			
+			
+			<li><a title="Technology" href="/technology">Technology</a></li>
+			
+			
+			<li><a title="Your Business" href="/yourbusiness">Your Business</a></li>
+			
+			
+			<li><a title="Our Portfolio" href="/ourportfolio">Our Portfolio</a></li>
+			
+			
+			<li><a title="Careers" href="/careers">Careers</a></li>
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+	
+	
+		
+			
+			
+			
+			
+				<li class="eFooterGroupDivider">
+			
+			
+			
+				<a title="Ericsson Labs" class="eIcon eLinkExt" rel="external" href="https://labs.ericsson.com/">Ericsson Labs</a>
+			
+			</li>
+			
+			
+			
+			
+				<li>
+			
+			
+			
+				<a title="Sony Ericsson" class="eIcon eLinkExt" rel="external" href="http://www.sonyericsson.com">Sony Ericsson</a>
+			
+			</li>
+			
+			
+			
+			
+				<li>
+			
+			
+			
+				<a title="ST Ericsson" class="eIcon eLinkExt" rel="external" href="http://www.stericsson.com/home/home.jsp">ST Ericsson</a>
+			
+			</li>
+			
+		
+	
+
+
+		</ul>
+	</div>	
+
+
+
+
+	
+	<div class="eFooterGroup">
+		
+	    <h3>Ericsson for</h3>
+	    
+		
+		<ul>
+			
+			
+			<li>
+			
+				<a title="Telecom Operators" href="/yourbusiness/">Telecom Operators</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Government" href="/yourbusiness/governments/">Government</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Utilities Industry" href="/yourbusiness/utilities/">Utilities Industry</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Media Industry" href="/yourbusiness/media_industry/">Media Industry</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Transport Industry" href="/ourportfolio/transport-industry/">Transport Industry</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Equipment manufacturer" href="/yourbusiness/equipment_manufacturer/">Equipment manufacturer</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Developers" href="/yourbusiness/developers">Developers</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Press" href="/ericsson/press/">Press</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Investors" href="/ericsson/investors/">Investors</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Industry Analysts" href="/ericsson/industryanalysts/">Industry Analysts</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Students" href="/careers/student/">Students</a>
+			
+			</li>
+			
+		</ul>
+		
+	</div>
+	
+	<div class="eFooterGroup">
+		
+	    <h3>What&#039;s on</h3>
+	    
+		
+		<ul>
+			
+			
+			<li>
+			
+				<a title="Press Releases" href="/thecompany/press/releases">Press Releases</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="RSS" href="/rss">RSS</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Stories" href="/thecompany/stories">Stories</a>
+			
+			</li>
+			
+			
+			<li>
+			
+				<a title="Events" href="/ericsson/events/index.shtml">Events</a>
+			
+			</li>
+			
+		</ul>
+		
+	</div>
+	
+
+
+
+
+	<div class="eFooterGroup">
+		<h3>General</h3>
+		
+		<ul>
+			
+				
+				
+				<li><a title="Sitemap" href="/sitemap">Sitemap</a></li>
+				
+			
+				
+				
+				<li><a title="Legal" href="/legal">Legal</a></li>
+				
+			
+				
+				
+				<li><a title="Privacy" href="/privacy">Privacy</a></li>
+				
+			
+				
+				
+				<li><a title="Contact Us" href="/contact">Contact Us</a></li>
+				
+			
+				
+				
+				<li><a title="Feedback/Inquiries" href="/feedback">Feedback/Inquiries</a></li>
+				
+			
+				
+				
+				<li><a title="FAQ" href="/faq">FAQ</a></li>
+				
+			
+				
+				
+			
+		</ul>
+		
+	</div>
+
+	<div class="eFooterGroupRight">
+		<form id="eFooterForm" action="/search/query.html" method="get">         		
+		<ul id="eFooterFormUl">
+            <li>
+            	<input name="charset" value="UTF-8" type="hidden" />
+            	<input id="eSearchFormInput2" name="qt" value="" class="eSearchFormInput" type="text" />
+				<input id="eSearchFormSubmit2" name="search" value="" class="eSearchFormSubmit" type="submit" />
+            </li>
+        </ul>
+    	<div style="display: none;"><input type="hidden" name="_sourcePage" value="Emv8oeaAgxYWn8JHzWcGm8oyTy03Qa4uHJaqo9XMAzT8XYFbn5_BRI9cCs3Sk2Du" /><input type="hidden" name="__fp" value="FlPD3BSlAzo=" /></div></form>
+	</div>  
+
+			
+			</div>
+		</div>
+	
+				
+	
+
+		<script src="Ericsson_files/eflowplayer-3.js" type="text/javascript"></script>
+		<script src="Ericsson_files/eyui2.8.0r4.js" type="text/javascript"></script>
+		<script src="Ericsson_files/eglobal.js" type="text/javascript"></script>
+	
+	
+		<script type="text/javascript" src="Ericsson_files/ehomepage.js"></script>
+		<script type="text/javascript" src="Ericsson_files/swfaddress.js"></script>
+	
+	
+	<!-- START OF SmartSource Data Collector TAG -->
+	<!-- Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved. -->
+	<!-- Version: 8.6.2 -->
+	<!-- Tag Builder Version: 3.0  -->
+	<!-- Created: 11/20/2009 11:51:16 AM -->
+	<script src="Ericsson_files/webtrends.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	var _tag=new WebTrends();
+	_tag.dcsGetId();
+	//]]>>
+	</script>
+	<script type="text/javascript">
+	//<![CDATA[
+	// Add custom parameters here.
+	//_tag.DCSext.param_name=param_value;
+	_tag.dcsCollect();
+	//]]>>
+	</script>
+	<noscript>
+	<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://webtrends-lb.ericsson.net/dcsrftdicme5tdblqnprqdfcv_8r3j/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"/></div>
+	</noscript>
+	<!-- END OF SmartSource Data Collector TAG -->
+	</body>
+	</html>	

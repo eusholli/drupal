@@ -1,0 +1,150 @@
+# $Id: colourise.ru.po,v 1.2 2009/04/26 17:22:44 gibbozer Exp $
+#
+# Thai translation of Drupal (Colourise Theme)
+# Generated from files:
+#  maintenance-page.tpl.php,v 1.1.2.2 2009/02/05 20:25:35 gibbozer
+#  page.tpl.php,v 1.1.1.8 2009/02/05 18:09:25 gibbozer
+#  node.tpl.php,v 1.1.1.7 2009/02/04 19:23:30 gibbozer
+#  template.php,v 1.1.1.7 2009/02/05 10:34:25 gibbozer
+#  theme-settings.php,v 1.1.1.10 2009/02/05 10:34:25 gibbozer
+#  colourise.info,v 1.1.1.6 2009/02/04 19:23:30 gibbozer
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colourise\n"
+"POT-Creation-Date: 2009-02-05 16:59+0700\n"
+"PO-Revision-Date: 2009-02-05 16:59+0700\n"
+"Last-Translator: Chemical Ali http://drupal.org/user/436828\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=((n==1)?(0):1);\n"
+
+#: node.tpl.php:20
+msgid "Related Terms"
+msgstr "Метки"
+
+#: page.tpl.php:39
+msgid "Home"
+msgstr "На главную"
+
+#: template.php:44
+msgid "Original Design is "
+msgstr "Оригинальный дизайон от "
+
+#: template.php:44
+msgid "Ported to Drupal by "
+msgstr "Портировано в Drupal силами "
+
+#: template.php:55;55
+msgid "Skip to Primary Menu"
+msgstr "К главному меню"
+
+#: template.php:56;56;63;63
+msgid "Skip to Main Content"
+msgstr "К тексту"
+
+#: template.php:74
+msgid "Back To Top"
+msgstr "Вверх"
+
+#: theme-settings.php:27
+msgid "Colourise Theme Settings"
+msgstr "Настройки темы Colourise"
+
+#: theme-settings.php:28
+msgid "Use these settings to change what and how information is displayed in <strong>Colourise</strong> theme."
+msgstr "Используйте эти настройки для смены отображения в теме <strong>Colourise</strong>."
+
+#: theme-settings.php:35
+msgid "Page Width"
+msgstr "Ширина страницы"
+
+#: theme-settings.php:36
+msgid "Select the page width you need. <strong>Be careful</strong>, the Narrow and Medium Width may not suite 2 sidebars."
+msgstr "Выберите нужную ширину. <strong>Помните,</strong> что Узкая и Средняя раскладки могут не иметь 2 колонок по бокам."
+
+#: theme-settings.php:39
+msgid "Narrow (Fixed width: 780px)"
+msgstr "Узкая (фиксированная ширина, 780пкс)"
+
+#: theme-settings.php:40
+msgid "Medium (Fixed width: 840px)"
+msgstr "Средняя (фиксированная ширина, 840пкс)"
+
+#: theme-settings.php:41
+msgid "Wide (Fixed width: 960px)"
+msgstr "Широкая (фиксированная ширина, 960пкс)"
+
+#: theme-settings.php:42
+msgid "Super Wide (Fixed width: 1020px)"
+msgstr "Очень широкая (фиксированная ширина, 1020пкс)"
+
+#: theme-settings.php:43
+msgid "Extreme Wide (Fixed width: 1140px)"
+msgstr "Совсем широкая (фиксированная ширина, 1140пкс)"
+
+#: theme-settings.php:44
+msgid "Fluid (min-width: 780px)"
+msgstr "Резиновая (минимальная ширина: 780пкс)"
+
+#: theme-settings.php:50
+msgid "Other Features"
+msgstr "Другие возможности"
+
+#: theme-settings.php:51
+msgid "Check / Uncheck each themes features you want to activate or deactivate for your site."
+msgstr "Отметьте нужные вам функции."
+
+#: theme-settings.php:58
+msgid "Use <strong>IE Transparent PNG Fix</strong>"
+msgstr "Корректно отображать PNG-изображения с прозрачностью"
+
+#: theme-settings.php:64
+msgid "Add <strong>Customized Stylesheet (custom.css)</strong>"
+msgstr "Добавить стили из <strong>моего файла (custom.css)</strong>"
+
+#: theme-settings.php:70
+msgid "Show <strong>Breadcrumbs</strong>"
+msgstr "Показывать <strong>цепочку навигации</strong>"
+
+#: theme-settings.php:76
+msgid "Show <strong>Back to Top link</strong> (the link will appear at footer)"
+msgstr "Показывать ссылку <strong>Вверх</strong> (будет отображаться в подвале"
+
+#: colourise.info:0
+msgid "Colourise"
+msgstr "Colourise"
+
+#: colourise.info:0
+msgid "Dark tableless design with valid XHTML/CSS. Visit <a href="http://webzer.net/tags/colourise">Webzer.net</a> for more informations."
+msgstr "Черный табличный дизайн с корректным XHTML/CSS. Подробная информация на <a href=\"http://webzer.net/tags/colourise\">Webzer.net</a>"
+
+#: colourise.info:0
+msgid "Left sidebar"
+msgstr "Левая колонка"
+
+#: colourise.info:0
+msgid "Right sidebar"
+msgstr "Правая колонка"
+
+#: colourise.info:0
+msgid "Top Content"
+msgstr "Над содержимым"
+
+#: colourise.info:0
+msgid "Bottom Content"
+msgstr "Под содержимым"
+
+#: colourise.info:0
+msgid "Footer Block 1"
+msgstr "Подвальный блок 1"
+
+#: colourise.info:0
+msgid "Footer Block 2"
+msgstr "Подвальный блок 2"
+
+#: colourise.info:0
+msgid "Footer Block 3"
+msgstr "Подвальный блок 3"

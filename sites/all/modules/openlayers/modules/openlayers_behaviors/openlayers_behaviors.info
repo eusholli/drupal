@@ -1,0 +1,11 @@
+name = OpenLayers Behaviors
+description = Provides a wide range of map 'behaviors' - pluggable map interactivities such as pop-ups, tooltips, and feature editing.
+core = 6.x
+package = OpenLayers
+dependencies[] = openlayers
+; Information added by drupal.org packaging script on 2009-10-02
+version = "6.x-1.0-beta3"
+core = "6.x"
+project = "openlayers"
+datestamp = "1254458133"
+

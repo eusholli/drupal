@@ -1,0 +1,222 @@
+<?php // $Id: geo_field.module,v 1.25 2009/08/07 16:54:23 vauxia Exp $
+
+/**
+ * @file
+ * CCK Field integration for geospatial data.
+ */
+
+/**
+ * Implementation of hook_field_info().
+ */
+function geo_field_info() {
+  return array(
+    'geo' => array(
+      'label' => t('Geospatial data'),
+      'callbacks' => array(),
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_field_settings().
+ */
+function geo_field_settings($op, $field) {
+  $field_name = $field['field_name'];
+  
+  switch ($op) {
+    case 'form':
+      $form = array();
+
+      // Store the geometry type for this field.
+      $form['geo_type'] = array(
+        '#type' => 'select',
+        '#title' => t('Data type'),
+        '#options' => geo('supported_types'),
+        '#default_value' => $field['geo_type'],
+        '#description' => t('Choose the datatype that best describes the information you are storing.  "Point" is suitable for addresses and other fixed points, but you may also choose "Linestring" for lines or tracks, and "Polygon" for shapes and areas.'),
+        '#disabled' => !empty($field['geo_type']),
+      );
+
+      // TODO pick the SRID for this column
+      if (!$field['srid']) $field['srid'] = GEO_SRID_DEFAULT;
+      $form['srid'] = array('#type' => 'value', '#value' => $field['srid']);
+
+      return $form;
+
+    case 'save':
+      return array('srid', 'geo_type');
+    
+    case 'database columns':
+      return geo('schema_field', $field['geo_type']);
+    
+    case 'views data':
+      // Start with default views data, as constructed by CCK.
+      $data = content_views_field_views_data($field);
+      $table = content_views_tablename($field);
+
+      // Copy the wkt item to geo, and add handlers for the geospatial field.
+      $geo = $field['field_name'] .'_geo';
+      $dst = $field['field_name'] .'_dst';
+
+      $data[$table][$dst] = $data[$table][$geo];
+
+      // Set field handler to our own.
+      $data[$table][$geo]['field']['field'] = $geo;
+      $data[$table][$geo]['field']['handler'] = 'views_handler_field_geo_field';
+      $data[$table][$geo]['field']['geo_type'] = $field['geo_type'];
+
+      // Add a field handler for distance.
+      $data[$table][$dst]['field']['title'] .= ' - '. t('Distance');
+      $data[$table][$dst]['field']['field'] = $geo;
+      $data[$table][$dst]['field']['handler'] = 'views_handler_field_geo_distance';
+      $data[$table][$dst]['field']['float'] = TRUE;
+      $data[$table][$dst]['field']['click sortable'] = TRUE;
+      $data[$table][$dst]['filter']['title'] = $data[$table][$dst]['field']['title'];
+      $data[$table][$dst]['filter']['handler'] = 'views_handler_filter_geo_distance';
+      $data[$table][$dst]['filter']['field'] = $geo;
+
+      $data[$table][$dst]['sort']['handler'] = 'views_handler_sort_geo_distance';
+      $data[$table][$dst]['sort']['field'] = $geo;
+
+      $data[$table][$dst]['field']['geo_type'] = $field['geo_type'];
+
+      // Set filter handler to Geo's built-in geo filters.
+      $data[$table][$geo]['filter']['field'] = $geo;
+      $data[$table][$geo]['filter']['handler'] = 'views_handler_filter_geo';
+      $data[$table][$geo]['filter']['geo_type'] = $field['geo_type'];
+
+      return $data;
+  }
+}
+
+/**
+ * Implementation of hook_field().
+ */
+function geo_field($op, &$node, $field, &$items, $teaser, $page) {
+
+  switch ($op) {
+
+    case 'load':
+      $db_info = content_database_info($field);
+      $column = $field['field_name'] .'_geo';
+
+      // Include the field delta in the query if it's a multi-value field.
+      $delta = $field['multiple'] ? ', delta' : '';
+
+      $res = db_query("SELECT ". geo('field_select', $column) . $delta ."
+        FROM {". $db_info['table'] ."} WHERE vid = %d", $node->vid);
+
+      $ret = array();
+      while ($row = db_fetch_array($res)) { 
+        $delta = isset($row['delta']) ? $row['delta'] : 0;
+        $ret[$delta]['gis type'] = $field['geo_type'];
+        foreach ($row as $k => $v) {
+          $k = str_replace($field['field_name'] .'_', '', $k);
+          if ($k != 'delta') $ret[$delta][$k] = db_decode_blob($v);
+        }
+      }
+
+      // Identify ourselves on the node level for RSS and other postprocessing.
+      if (!isset($node->geo_fields)) $node->geo_fields = array();
+      $node->geo_fields[$field['field_name']] = 'geo';
+
+      return array(
+        $field['field_name'] => $ret,
+        'geo_fields' => $node->geo_fields,
+      );
+
+    case 'validate':
+      foreach ($items as $k => $item) {
+
+        if(geo_content_is_empty($item, $field)) return;
+
+        if (($error = geo('wkt_validate', $item['geo'], $field['geo_type'])) !== TRUE) {
+          $error_field = $field['field_name'];
+          form_set_error($error_field, $error);
+        }
+        $items[$k] = $item;
+      }
+      return;
+
+    case 'presave':
+      foreach ($items as $k => $item) {
+        // Convert the wkt to binary data before the insert. This allows the
+        // input to pass through the binary query substitutions.
+        if(!geo_content_is_empty($item, $field)) {
+          $item['geo'] = db_result(db_query("SELECT GeomFromText('%s', %d)", $item['geo'], $field['srid']));
+        }
+        $items[$k] = $item;
+      }
+      return;
+
+    case 'sanitize':
+      geo_set_pre_render($node->content);
+      return;
+  }
+}
+
+/**
+ * Implementation of hook_content_is_empty().
+ * It's named after the field type (geo), not the module (geo_data).
+ */
+function geo_content_is_empty($item, $field) {
+  return empty($item['geo']);
+}
+
+/**
+ * Implementation of hook_widget_info().
+ */
+function geo_field_widget_info() {
+  $widget_info = array();
+  foreach (module_invoke_all('gis_input_info') as $name => $info) {
+    if (!$info['safe reverse']) continue;
+    $widget_info[$name] = $info;
+    $widget_info[$name]['field types'] = array_keys(geo_field_info());
+// TODO handle multiple?
+  }
+  return $widget_info;
+}
+
+/**
+ * Implementation of hook_widget().
+ */
+function geo_field_widget(&$form, &$form_state, $field, $items, $delta = 0) {
+  $info = module_invoke_all('gis_input_info');
+  $info = $info[$field['widget']['type']];
+
+  foreach ($items as $key => $item) {
+    // Convert from the storage format (wkb) to the element's expected format.
+    if ($info['gis input']) {
+      $data = geo_wkb_get_data($item['wkb'], $info['gis input']);
+      $items[$key] = $data['value'];
+    }
+  }
+
+  $element['#theme'] = 'geo_fields';
+  $element['geo'] = array_merge($info['element'], array(
+    '#default_value' => isset($items[$delta]) ? $items[$delta] : '',
+    '#gis_type' => $field['geo_type'],
+    '#gis_input' => $info['gis input'], // The format expected by the element.
+    '#gis_output' => 'wkt', // The format expected by geo_field's storage.
+    '#delta' => $delta,
+    '#title' => t($field['widget']['label']),
+    '#required' => $field['required'],
+    '#description' => $field['widget']['description'],
+  ));
+
+  if (!isset($element['geo']['#after_build'])) {
+    $element['geo']['#after_build'] = array();
+  }
+  $element['geo']['#after_build'][] = 'geo_element_set_value';
+  return $element;
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function geo_field_views_api() {
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'geo_field') .'/includes/views',
+  );
+}

@@ -1,0 +1,94 @@
+#eContent {
+	padding:0;
+}
+h1 { 
+	color:#999;
+	font-size:1em;
+	font-weight:normal;
+	margin:.5em 0 0 0;	
+	padding:0 0 0 8px;
+	width: auto !important; /* IE 6 fix */
+}
+h2 { 
+	text-transform: uppercase; 
+}
+#eBannerContainer{
+	padding: 0 0 2em;	
+}
+#eBannerContainer .eColGroup{
+	margin: 1.5em 0 0;
+}
+
+#eBannerContainer .eCol2w50,
+#eBannerContainer .eCol2w50m {
+	padding-top:18px;
+}
+
+.eCol2w33m{
+	overflow:hidden	
+}
+.eCol2w66m{
+	max-width: 240px	
+}
+#eBannerContainer h2{
+	font-size:80%;
+	margin:0 0 .4em 0;
+	color:#999;
+}
+#eBannerContainer h3.eH3Spot{
+	margin:0 0 .4em 0
+}
+#eBannerContainer h3.eH3Text{
+	margin:1.5em 0 .9em 0;
+}
+#eBannerContainer a{
+	font-size:80%;
+}
+#eBannerContainer .ePt{
+	padding-top: 3em;
+}
+#eTextShowTab{
+	background:#FFFFFF !important;
+	float:left;	
+	padding:26px 40px;
+	width:100%;
+}
+#eTextShowTab .eH2Sifr{
+	margin:0 0 0 0;
+}
+.sIFR-active #eTextShowTab .eH3Sifr{
+	margin:-10px 0 20px 0 !important;
+}
+#eTextShowTab a {
+	display: block;
+	/*font-size:70%;*/
+}
+#eTextShowTab .eCol2w33 {
+	width:100px;
+}
+.eH3Spot{
+	text-transform:none;	
+}
+.eTextShowH4{
+	margin:0 0 0 0;
+	color:#333333;
+}
+#eTextShowTab img{
+	margin-top:3px;
+}
+#eFlashFallback1{
+	display:none;
+	padding:0 0 0 8px !important;
+}
+#eFlashFallback2{
+	display:none;
+	margin:0 0 40px !important;
+	padding:1em 0 2em;
+	background: #FFFFFF;
+}
+#eFlashFallback2 ul{
+	margin:0;
+}
+.eFlashFallback h4{
+	color: #000;
+}

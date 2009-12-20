@@ -1,0 +1,15 @@
+name = Ericsson
+description = Ericsson Drupal Theme
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = sifr.css
+stylesheets[all][] = ebase.css
+stylesheets[all][] = elayout.css
+stylesheets[all][] = ehomepage.css
+stylesheets[all][] = ehacks.css
+
+scripts[] = js/eflowplayer-3.js
+scripts[] = js/eyui2.8.0r4.js
+scripts[] = js/eglobal.js
+scripts[] = js/ehomepage.js
+scripts[] = js/swfaddress.js

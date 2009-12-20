@@ -1,0 +1,14 @@
+name = Geo + GMap
+description = Provides a Google Map location picker widget for Geo point fields and a Google Maps-based output formatter for point, line, and polygon fields.
+package = Geo
+dependencies[] = geo
+dependencies[] = gmap
+dependencies[] = content
+core = 6.x
+
+; Information added by drupal.org packaging script on 2009-09-02
+version = "6.x-1.x-dev"
+core = "6.x"
+project = "gmap_geo"
+datestamp = "1251893665"
+
